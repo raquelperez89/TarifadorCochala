@@ -1,13 +1,15 @@
-public class PlanMensual
+class PlanMensual
 {
-    public double costoMinuto { get; set;}
-    public double costoInicial { get; set;}
+    private readonly double costoMinuto ;
+    private readonly double costoInicial ;
+    private IVehiculo vehiculo;
+    double planConVehiculo;
 
-    public PlanMensual(){
-        this.costoMinuto = 0.70;
+    public PlanMensual(IVehiculo vehiculo){
+        this.costoMinuto = 0.7;
         this.costoInicial = 70;
+        this.vehiculo = vehiculo;
     }
     public void agregarMonto(){
-        
     }  
 }
