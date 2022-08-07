@@ -1,6 +1,21 @@
 class Bicicleta : IVehiculo
 {
-    public readonly double montoRegular = 3;
-    public readonly double montoMensual = 30;
-    public readonly double montoAnual = 300;    
+    private double montoMensual = 30;
+    private double montoRegular = 3;
+    private double montoAnual = 300;    
+
+    public double getMontoRegular()
+    {
+        return this.montoRegular;
+    }
+    public double getMontoMensual()
+    {
+        return this.montoMensual;
+    }
+    public double getMontoAnual()
+    {
+        return this.montoAnual;
+    }
+
+    
 }
