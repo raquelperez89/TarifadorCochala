@@ -7,11 +7,7 @@ class PlanRegular{
         this.costoMinuto = 0.8;
         this.costoInicial = 5;
         this.vehiculo = vehiculo;
+        this.planConVehiculo = this.vehiculo.getMontoMensual() + this.costoInicial;
     } 
-    public double agregarMonto(){
-        //Se agregara esta parte cuando vehiculo tenga el metodo getMontoRegular();
-        //planConVehiculo = this.costoInicial + this.vehiculo.getMontoRegular();
-        return planConVehiculo;
-    }
 }
 
