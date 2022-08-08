@@ -6,4 +6,5 @@ class Hoverboard : IVehiculo
     {
         return this.tarifaAgregadaMinuto;
     }
+    
 }

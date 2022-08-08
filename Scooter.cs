@@ -6,4 +6,5 @@ class Scooter : IVehiculo
     {
         return this.tarifaAgregadaMinuto;
     }
+    
 }
