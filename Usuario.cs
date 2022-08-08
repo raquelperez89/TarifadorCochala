@@ -1,8 +1,15 @@
 class Usuario{
-    private int ci{get;set;}
-    private string nombre{get;set;}
-    private DateTime fechaDeNacimiento{get;set;}
-    private string ocupacion{get;set;}
-    //private Plan plan;
+    public int ci{get; set;}
+    public string nombreCompleto{get; set;}
+    public DateOnly fechaNacimiento{get; set;}
+    public string ocupacion{get; set;}
+    public IPlan plan {get; set;}
 
+    public Usuario(int ci, string nombreCompleto, DateOnly fechaNacimiento, string ocupacion, IPlan plan){
+        this.ci = ci;
+        this.nombreCompleto = nombreCompleto;
+        this.fechaNacimiento = fechaNacimiento;
+        this.ocupacion = ocupacion;
+        this.plan = plan;
+    }
 }
