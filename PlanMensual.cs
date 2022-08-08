@@ -1,14 +1,9 @@
-class PlanMensual
+class PlanMensual : IPlan
 {
-    private readonly double costoMinuto ;
-    private readonly double costoInicial ;
-    private IVehiculo vehiculo;
-    double planConVehiculo;
+     private readonly double costoMinutoInicial = 0.3;
 
-    public PlanMensual(IVehiculo vehiculo){
-        this.costoMinuto = 0.7;
-        this.costoInicial = 70;
-        this.vehiculo = vehiculo;
-        this.planConVehiculo = this.vehiculo.getMontoMensual() + this.costoInicial;
+    public double cobroTotalPorMinuto(IVehiculo tipoVehiculo)
+    {
+        return costoMinutoInicial + tipoVehiculo.getTarifaAgregada();
     }
 }
