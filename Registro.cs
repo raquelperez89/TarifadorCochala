@@ -5,12 +5,15 @@ class Registro
     public int minutos {get; set;}
     public DateOnly fecha {get; set;} 
 
-    public Registro(){
+    public Registro(int usuarioCi, IVehiculo vehiculo, int minutos){
         this.fecha = DateOnly.FromDateTime(DateTime.Now);
+        this.usuarioCi = usuarioCi;
+        this.vehiculo = vehiculo;
+        this.minutos = minutos;
     }
 
-    public double calcularMontoRegistro(Usuario usuario)
+    public void calcularMontoRegistro(Usuario usuario)
     {
-        return usuario.plan.cobroTotalMinutos(vehiculo) * minutos;
+        usuario.agregarMontoPorPagar( usuario.plan.cobroTotalPorMinuto(this.vehiculo) * minutos );
     }
 }
