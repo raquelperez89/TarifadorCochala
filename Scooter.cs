@@ -1,6 +1,9 @@
 class Scooter : IVehiculo
 {
-    public readonly double montoRegular = 2;
-    public readonly double montoMensual = 15;
-    public readonly double montoAnual = 200;
+    private double tarifaAgregadaMinuto = 0.20;
+
+    public double getTarifaAgregada()
+    {
+        return this.tarifaAgregadaMinuto;
+    }
 }
