@@ -9,7 +9,6 @@ class PlanMensual
         this.costoMinuto = 0.7;
         this.costoInicial = 70;
         this.vehiculo = vehiculo;
+        this.planConVehiculo = this.vehiculo.getMontoMensual() + this.costoInicial;
     }
-    public void agregarMonto(){
-    }  
 }

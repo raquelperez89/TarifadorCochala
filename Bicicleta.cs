@@ -1,6 +1,10 @@
 class Bicicleta : IVehiculo
 {
-    public readonly double montoRegular = 3;
-    public readonly double montoMensual = 30;
-    public readonly double montoAnual = 300;    
+    private double tarifaAgregadaMinuto = 0.30;
+
+    public double getTarifaAgregada()
+    {
+        return this.tarifaAgregadaMinuto;
+    }
+    
 }

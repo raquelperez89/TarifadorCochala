@@ -1,3 +1,3 @@
 interface IVehiculo {
-
+    double getTarifaAgregada();
 }
