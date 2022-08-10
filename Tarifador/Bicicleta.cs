@@ -1,4 +1,5 @@
-class Bicicleta : IVehiculo
+namespace tarifador{
+public class Bicicleta : IVehiculo
 {
     private double tarifaAgregadaMinuto = 0.30;
 
@@ -7,4 +8,5 @@ class Bicicleta : IVehiculo
         return this.tarifaAgregadaMinuto;
     }
     
+}
 }

@@ -1,4 +1,9 @@
-﻿class Program{
+﻿using System;
+using tarifador;
+using hoverboardN;
+using System.Collections.Generic;
+
+class Program{
     static void Main(string[] args)
     {
         PlanRegular planRegular = new PlanRegular();

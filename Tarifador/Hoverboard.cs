@@ -1,4 +1,5 @@
-class Hoverboard : IVehiculo
+namespace hoverboardN{
+public class Hoverboard : IVehiculo
 {
     private double tarifaAgregadaMinuto = 0.25;
 
@@ -6,4 +7,5 @@ class Hoverboard : IVehiculo
     {
         return this.tarifaAgregadaMinuto;
     }
+}
 }

@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 class Tarifador
 {
     private List<Usuario> usuarios = new List<Usuario>();

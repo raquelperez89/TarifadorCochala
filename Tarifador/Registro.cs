@@ -1,3 +1,5 @@
+using System;
+
 class Registro
 {
     public IVehiculo ? vehiculo {get; set;}

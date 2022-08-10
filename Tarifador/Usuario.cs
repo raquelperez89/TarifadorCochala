@@ -1,3 +1,5 @@
+using System;
+
 class Usuario{
     public int ci{get; set;}
     public string nombreCompleto{get; set;}
