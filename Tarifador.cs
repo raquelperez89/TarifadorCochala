@@ -1,36 +1,27 @@
 class Tarifador
 {
-    private List<Usuario> usuarios;
-    private List<Registro> registros;
-
-    public void addRegistro(Registro registro)
-    {
-        registros.Add(registro);
-    }
-
+    private List<Usuario> usuarios = new List<Usuario>();
     public void addUsuario(Usuario usuario)
     {
         usuarios.Add(usuario);
     }
 
-    public void addListaRegistros(List<Registro> listaRegistros)
-    {
-        this.registros = listaRegistros;
-    }
     public void addListaUsuarios(List<Usuario> listaUsuarios)
     {
         this.usuarios = listaUsuarios;
     }
 
-    public void tarifar()
+    public void tarifar(List<IDescuento> descuentos)
     {        
-        this.usuarios.ForEach( usuario =>  this.registros.ForEach(registro =>
+        this.usuarios.ForEach( usuario =>  usuario.calcularMontoTotalRegistros(descuentos));
+    }
+
+    public void aniadirRegistroAUsuario(int ciUsuario, Registro registro){
+        Usuario usuario = usuarios.Find(usuarios => usuarios.ci == ciUsuario);
+        if (usuario != null)
         {
-            if(usuario.ci == registro.usuarioCi) 
-            {
-                registro.calcularMontoRegistro(usuario);
-            }
-        }));
+            usuario.agregarNuevoRegistro(registro);
+        }
     }
 
     public void mostrarMontoPorUsuario(){
