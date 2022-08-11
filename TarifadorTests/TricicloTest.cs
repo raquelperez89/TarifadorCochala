@@ -1,4 +1,3 @@
-using tarifador;
 using NUnit.Framework;
 
 namespace TarifadorTests
