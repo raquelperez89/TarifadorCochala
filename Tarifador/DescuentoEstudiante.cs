@@ -1,4 +1,4 @@
-class DescuentoEstudiante: IDescuento
+public class DescuentoEstudiante: IDescuento
 {
     private double porcentajeDescuento = 0.15;
     public double getPorcentajeDescuento(Usuario usuario){

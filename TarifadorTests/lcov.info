@@ -16,47 +16,47 @@ FNH:2
 end_of_record
 SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\DescuentoCumple.cs
 FN:5,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-FNDA:2,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-DA:6,2
-DA:7,2
-DA:8,2
-DA:9,1
-DA:10,1
-DA:12,1
-DA:13,2
-BRDA:8,33,0,2
-BRDA:8,33,1,0
-BRDA:8,63,0,1
-BRDA:8,63,1,1
+FNDA:4,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
+DA:6,4
+DA:7,4
+DA:8,4
+DA:9,2
+DA:10,2
+DA:12,2
+DA:13,4
+BRDA:8,33,0,3
+BRDA:8,33,1,1
+BRDA:8,63,0,2
+BRDA:8,63,1,2
 FN:2,System.Void DescuentoCumple::.ctor()
-FNDA:2,System.Void DescuentoCumple::.ctor()
-DA:3,2
+FNDA:4,System.Void DescuentoCumple::.ctor()
+DA:3,4
 LF:8
 LH:8
 BRF:4
-BRH:3
+BRH:4
 FNF:2
 FNH:2
 end_of_record
 SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\DescuentoEstudiante.cs
 FN:3,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
-FNDA:0,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
-DA:4,0
-DA:6,0
-DA:8,0
-DA:10,0
-DA:11,0
-BRDA:6,19,0,0
-BRDA:6,19,1,0
+FNDA:3,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
+DA:4,3
+DA:6,4
+DA:8,1
+DA:10,2
+DA:11,3
+BRDA:6,19,0,1
+BRDA:6,19,1,2
 FN:2,System.Void DescuentoEstudiante::.ctor()
-FNDA:0,System.Void DescuentoEstudiante::.ctor()
-DA:3,0
+FNDA:3,System.Void DescuentoEstudiante::.ctor()
+DA:3,3
 LF:6
-LH:0
+LH:6
 BRF:2
-BRH:0
+BRH:2
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Hoverboard.cs
 FN:6,System.Double Hoverboard::getTarifaAgregada()
@@ -81,8 +81,8 @@ DA:6,0
 DA:7,0
 DA:8,0
 FN:2,System.Void PlanMensual::.ctor()
-FNDA:3,System.Void PlanMensual::.ctor()
-DA:3,3
+FNDA:8,System.Void PlanMensual::.ctor()
+DA:3,8
 LF:4
 LH:1
 BRF:0
@@ -191,20 +191,20 @@ FNH:0
 end_of_record
 SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Usuario.cs
 FN:4,System.Int32 UsuarioN.Usuario::get_ci()
-FNDA:3,System.Int32 UsuarioN.Usuario::get_ci()
-DA:5,3
+FNDA:8,System.Int32 UsuarioN.Usuario::get_ci()
+DA:5,8
 FN:5,System.String UsuarioN.Usuario::get_nombreCompleto()
-FNDA:3,System.String UsuarioN.Usuario::get_nombreCompleto()
-DA:6,3
+FNDA:8,System.String UsuarioN.Usuario::get_nombreCompleto()
+DA:6,8
 FN:7,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-FNDA:7,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-DA:8,7
+FNDA:15,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
+DA:8,15
 FN:8,System.String UsuarioN.Usuario::get_ocupacion()
-FNDA:3,System.String UsuarioN.Usuario::get_ocupacion()
-DA:9,3
+FNDA:11,System.String UsuarioN.Usuario::get_ocupacion()
+DA:9,11
 FN:9,IPlanN.IPlan UsuarioN.Usuario::get_plan()
-FNDA:3,IPlanN.IPlan UsuarioN.Usuario::get_plan()
-DA:10,3
+FNDA:8,IPlanN.IPlan UsuarioN.Usuario::get_plan()
+DA:10,8
 FN:22,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
 FNDA:0,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
 DA:23,0
@@ -225,16 +225,16 @@ DA:35,0
 DA:36,0
 DA:38,0
 FN:10,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
-FNDA:3,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
-DA:11,3
-DA:13,3
-DA:15,6
-DA:16,3
-DA:17,3
-DA:18,3
-DA:19,3
-DA:20,3
-DA:21,3
+FNDA:8,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
+DA:11,8
+DA:13,8
+DA:15,16
+DA:16,8
+DA:17,8
+DA:18,8
+DA:19,8
+DA:20,8
+DA:21,8
 LF:27
 LH:14
 BRF:0

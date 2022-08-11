@@ -13,6 +13,8 @@ namespace TarifadorTests
         }
 
         [TestCase(08, 11, 0.3)]
+        [TestCase(01, 11, 0)]
+        [TestCase(08, 11, 0.3)]
         [TestCase(08, 18, 0)]
         public void getPorcentajeDescuentoTest(int mes, int dia, double expected)
         {
