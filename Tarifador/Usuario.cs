@@ -1,6 +1,10 @@
-class Usuario{
+using System.Text.Json.Serialization;
+using IPlanN;
+namespace UsuarioN{
+public class Usuario{
     public int ci{get; set;}
     public string nombreCompleto{get; set;}
+    [JsonConverter(typeof(TarifadorJson.DateOnlyJsonConverter))]
     public DateOnly fechaNacimiento{get; set;}
     public string ocupacion{get; set;}
     public IPlan plan {get; set;}
@@ -33,4 +37,5 @@ class Usuario{
         
     }
 
+}
 }

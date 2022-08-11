@@ -1,6 +1,7 @@
-class Hoverboard : IVehiculo
+[Serializable]
+class Scooter : IVehiculo
 {
-    private double tarifaAgregadaMinuto = 0.25;
+    private double tarifaAgregadaMinuto = 0.20;
 
     public double getTarifaAgregada()
     {

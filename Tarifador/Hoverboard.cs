@@ -1,10 +1,10 @@
-class Bicicleta : IVehiculo
+
+public class Hoverboard : IVehiculo
 {
-    private double tarifaAgregadaMinuto = 0.30;
+    private double tarifaAgregadaMinuto = 0.25;
 
     public double getTarifaAgregada()
     {
         return this.tarifaAgregadaMinuto;
     }
-    
 }

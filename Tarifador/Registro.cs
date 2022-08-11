@@ -1,4 +1,6 @@
-class Registro
+
+namespace RegistroN{
+public class Registro
 {
     public IVehiculo ? vehiculo {get; set;}
     public int minutos {get; set;}
@@ -17,4 +19,5 @@ class Registro
         montoRegistro = usuario.plan.cobroTotalPorMinuto(this.vehiculo) * minutos ;
         montoRegistro = montoRegistro - montoRegistro*totalDescuentos;
     }
+}
 }
