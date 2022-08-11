@@ -1,4 +1,4 @@
-using tarifador;
+using bicicleta;
 using NUnit.Framework;
 
 namespace TarifadorTests
