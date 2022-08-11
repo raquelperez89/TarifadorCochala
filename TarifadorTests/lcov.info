@@ -274,20 +274,25 @@ FNH:0
 end_of_record
 SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Scooter.cs
 FN:5,System.Double Scooter::getTarifaAgregada()
-FNDA:0,System.Double Scooter::getTarifaAgregada()
-DA:6,0
-DA:7,0
-DA:8,0
+FNDA:1,System.Double Scooter::getTarifaAgregada()
+DA:6,1
+DA:7,1
+DA:8,1
 FN:2,System.Void Scooter::.ctor()
+<<<<<<< HEAD
 FNDA:0,System.Void Scooter::.ctor()
 DA:3,0
 >>>>>>> fb247ae (added coverage configuration)
+=======
+FNDA:1,System.Void Scooter::.ctor()
+DA:3,1
+>>>>>>> 84ebe51 (unit tests of Scooter and Triciclo added)
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 <<<<<<< HEAD
 =======
@@ -336,19 +341,19 @@ end_of_record
 >>>>>>> fb247ae (added coverage configuration)
 SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Triciclo.cs
 FN:5,System.Double Triciclo::getTarifaAgregada()
-FNDA:0,System.Double Triciclo::getTarifaAgregada()
-DA:6,0
-DA:7,0
-DA:8,0
+FNDA:1,System.Double Triciclo::getTarifaAgregada()
+DA:6,1
+DA:7,1
+DA:8,1
 FN:2,System.Void Triciclo::.ctor()
-FNDA:0,System.Void Triciclo::.ctor()
-DA:3,0
+FNDA:1,System.Void Triciclo::.ctor()
+DA:3,1
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Usuario.cs
 <<<<<<< HEAD
