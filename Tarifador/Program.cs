@@ -3,9 +3,7 @@ global using IPlanN;
 global using UsuarioN;
 global using IDescuentoN;
 global using RegistroN;
-using bicicleta;
 using TarifadorMain;
-using hoverboardN;
 using System.Text.Json;
 
 class Program
@@ -19,30 +17,6 @@ class Program
         IVehiculo bicicleta = new Bicicleta();
         IVehiculo hoverboard = new Hoverboard();
         IVehiculo triciclo = new Triciclo();
-        /*
-
-        string fileNameread = "TarifadorVehiculos.json";
-        string jsonString = File.ReadAllText(fileNameread);
-        IVehiculo weatherForecast = JsonSerializer.Deserialize<IVehiculo>(jsonString)!;
-
-        Console.WriteLine($"Date: {weatherForecast.GetType()}");
-
-        //BinarySerialization
-
-        /*IFormatter formatter = new BinaryFormatter();
-        Stream stream = new FileStream("D:\\Example.txt", FileMode.Create, FileAccess.Write);
-
-        formatter.Serialize(stream, scooter);
-        stream.Close();
-
-        stream = new FileStream("D:\\Example.txt",FileMode.Open,FileAccess.Read);
-        IVehiculo scooter2 = (IVehiculo)formatter.Deserialize(stream);
-
-        Console.WriteLine(scooter2.getTarifaAgregada());
-        Console.WriteLine(scooter.GetType());
-
-        Console.ReadKey();
-        */
 
         List<Registro> listaRegistros = new List<Registro>()
         {

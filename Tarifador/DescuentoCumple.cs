@@ -1,4 +1,4 @@
-class DescuentoCumple : IDescuento
+public class DescuentoCumple : IDescuento
 {
     private double porcentajeDescuento = 0.30;
 

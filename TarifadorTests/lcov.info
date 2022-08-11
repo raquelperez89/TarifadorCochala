@@ -16,25 +16,25 @@ FNH:2
 end_of_record
 SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\DescuentoCumple.cs
 FN:5,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-FNDA:1,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-DA:6,1
-DA:7,1
-DA:8,1
-DA:9,0
-DA:10,0
+FNDA:2,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
+DA:6,2
+DA:7,2
+DA:8,2
+DA:9,1
+DA:10,1
 DA:12,1
-DA:13,1
-BRDA:8,33,0,0
-BRDA:8,33,1,1
-BRDA:8,63,0,0
+DA:13,2
+BRDA:8,33,0,2
+BRDA:8,33,1,0
+BRDA:8,63,0,1
 BRDA:8,63,1,1
 FN:2,System.Void DescuentoCumple::.ctor()
-FNDA:1,System.Void DescuentoCumple::.ctor()
-DA:3,1
+FNDA:2,System.Void DescuentoCumple::.ctor()
+DA:3,2
 LF:8
-LH:6
+LH:8
 BRF:4
-BRH:2
+BRH:3
 FNF:2
 FNH:2
 end_of_record
@@ -81,8 +81,8 @@ DA:6,0
 DA:7,0
 DA:8,0
 FN:2,System.Void PlanMensual::.ctor()
-FNDA:2,System.Void PlanMensual::.ctor()
-DA:3,2
+FNDA:3,System.Void PlanMensual::.ctor()
+DA:3,3
 LF:4
 LH:1
 BRF:0
@@ -191,20 +191,20 @@ FNH:0
 end_of_record
 SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Usuario.cs
 FN:4,System.Int32 UsuarioN.Usuario::get_ci()
-FNDA:2,System.Int32 UsuarioN.Usuario::get_ci()
-DA:5,2
+FNDA:3,System.Int32 UsuarioN.Usuario::get_ci()
+DA:5,3
 FN:5,System.String UsuarioN.Usuario::get_nombreCompleto()
-FNDA:2,System.String UsuarioN.Usuario::get_nombreCompleto()
-DA:6,2
+FNDA:3,System.String UsuarioN.Usuario::get_nombreCompleto()
+DA:6,3
 FN:7,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-FNDA:3,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-DA:8,3
+FNDA:7,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
+DA:8,7
 FN:8,System.String UsuarioN.Usuario::get_ocupacion()
-FNDA:2,System.String UsuarioN.Usuario::get_ocupacion()
-DA:9,2
+FNDA:3,System.String UsuarioN.Usuario::get_ocupacion()
+DA:9,3
 FN:9,IPlanN.IPlan UsuarioN.Usuario::get_plan()
-FNDA:2,IPlanN.IPlan UsuarioN.Usuario::get_plan()
-DA:10,2
+FNDA:3,IPlanN.IPlan UsuarioN.Usuario::get_plan()
+DA:10,3
 FN:22,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
 FNDA:0,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
 DA:23,0
@@ -225,16 +225,16 @@ DA:35,0
 DA:36,0
 DA:38,0
 FN:10,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
-FNDA:2,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
-DA:11,2
-DA:13,2
-DA:15,4
-DA:16,2
-DA:17,2
-DA:18,2
-DA:19,2
-DA:20,2
-DA:21,2
+FNDA:3,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
+DA:11,3
+DA:13,3
+DA:15,6
+DA:16,3
+DA:17,3
+DA:18,3
+DA:19,3
+DA:20,3
+DA:21,3
 LF:27
 LH:14
 BRF:0

@@ -1,4 +1,4 @@
-namespace bicicleta{
+
 public class Bicicleta : IVehiculo
 {
     private double tarifaAgregadaMinuto = 0.30;
@@ -8,5 +8,4 @@ public class Bicicleta : IVehiculo
         return this.tarifaAgregadaMinuto;
     }
     
-}
 }

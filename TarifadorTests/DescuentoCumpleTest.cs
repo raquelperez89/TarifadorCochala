@@ -12,14 +12,15 @@ namespace TarifadorTests
             descuentoCumple = new DescuentoCumple();
         }
 
-        [Test]
-        public void getPorcentajeDescuentoTest()
+        [TestCase(08, 11, 0.3)]
+        [TestCase(08, 18, 0)]
+        public void getPorcentajeDescuentoTest(int mes, int dia, double expected)
         {
             IPlan plan = new PlanMensual();
-            DateOnly fechaNacimiento = new DateOnly(2000,12,1);
+            DateOnly fechaNacimiento = new DateOnly(2000,mes,dia);
             Usuario usuario = new Usuario(89898, "Test", fechaNacimiento, "Estudiante", plan);
             double result = descuentoCumple.getPorcentajeDescuento(usuario);
-            Assert.AreEqual(result, 0);
+            Assert.AreEqual(result, expected);
         }
     }
 }
