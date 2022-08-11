@@ -1,0 +1,30 @@
+[
+  {
+    "ci": 1,
+    "nombreCompleto": "Pedro picapiedra",
+    "fechaNacimiento": "11/08/2000",
+    "ocupacion": "plomero",
+    "plan": {}
+  },
+  {
+    "ci": 2,
+    "nombreCompleto": "goku",
+    "fechaNacimiento": "20/04/2000",
+    "ocupacion": "Estudiante",
+    "plan": {}
+  },
+  {
+    "ci": 3,
+    "nombreCompleto": "juanito",
+    "fechaNacimiento": "20/04/2000",
+    "ocupacion": "plomero",
+    "plan": {}
+  },
+  {
+    "ci": 4,
+    "nombreCompleto": "mafalda",
+    "fechaNacimiento": "11/08/2000",
+    "ocupacion": "Estudiante",
+    "plan": {}
+  }
+]

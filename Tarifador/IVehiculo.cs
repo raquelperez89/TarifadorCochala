@@ -1,3 +1,5 @@
-interface IVehiculo {
+namespace IVehiculoN{
+public interface IVehiculo {
     double getTarifaAgregada();
+}
 }

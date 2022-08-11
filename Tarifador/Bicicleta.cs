@@ -1,4 +1,4 @@
-namespace tarifador{
+namespace bicicleta{
 public class Bicicleta : IVehiculo
 {
     private double tarifaAgregadaMinuto = 0.30;

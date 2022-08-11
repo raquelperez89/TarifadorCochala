@@ -1,10 +1,16 @@
-﻿using System;
-using tarifador;
+﻿global using IVehiculoN;
+global using IPlanN;
+global using UsuarioN;
+global using IDescuentoN;
+global using RegistroN;
+using bicicleta;
+using TarifadorMain;
 using hoverboardN;
-using System.Collections.Generic;
+using System.Text.Json;
 
-class Program{
-    static void Main(string[] args)
+class Program
+{
+    static async Task Main(string[] args)
     {
         PlanRegular planRegular = new PlanRegular();
         PlanMensual planMensual = new PlanMensual();
@@ -13,6 +19,30 @@ class Program{
         IVehiculo bicicleta = new Bicicleta();
         IVehiculo hoverboard = new Hoverboard();
         IVehiculo triciclo = new Triciclo();
+        /*
+
+        string fileNameread = "TarifadorVehiculos.json";
+        string jsonString = File.ReadAllText(fileNameread);
+        IVehiculo weatherForecast = JsonSerializer.Deserialize<IVehiculo>(jsonString)!;
+
+        Console.WriteLine($"Date: {weatherForecast.GetType()}");
+
+        //BinarySerialization
+
+        /*IFormatter formatter = new BinaryFormatter();
+        Stream stream = new FileStream("D:\\Example.txt", FileMode.Create, FileAccess.Write);
+
+        formatter.Serialize(stream, scooter);
+        stream.Close();
+
+        stream = new FileStream("D:\\Example.txt",FileMode.Open,FileAccess.Read);
+        IVehiculo scooter2 = (IVehiculo)formatter.Deserialize(stream);
+
+        Console.WriteLine(scooter2.getTarifaAgregada());
+        Console.WriteLine(scooter.GetType());
+
+        Console.ReadKey();
+        */
 
         List<Registro> listaRegistros = new List<Registro>()
         {
@@ -25,18 +55,29 @@ class Program{
 
         List<Usuario> listaUsuarios = new List<Usuario>()
         {
-            new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 10), "plomero", planRegular),
+            new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", planRegular),
             new Usuario(2, "goku", new DateOnly(2000, 04, 20), "Estudiante", planRegular),
             new Usuario(3, "juanito", new DateOnly(2000, 04, 20), "plomero", planMensual),
-            new Usuario(4, "mafalda", new DateOnly(2000, 08, 10), "Estudiante", planRegular) 
+            new Usuario(4, "mafalda", new DateOnly(2000, 08, 11), "Estudiante", planRegular) 
         };
+        
 
-        /* listaUsuarios[0].agregarNuevoRegistro(listaRegistros[0]);
-        listaUsuarios[1].agregarNuevoRegistro(listaRegistros[1]);
-        listaUsuarios[1].agregarNuevoRegistro(listaRegistros[3]);
-        listaUsuarios[2].agregarNuevoRegistro(listaRegistros[2]);
-        listaUsuarios[3].agregarNuevoRegistro(listaRegistros[4]); */
+        string fileName = "TarifadorDatos.json";
+        using FileStream createStream = File.Create(fileName);
+        var options = new JsonSerializerOptions { WriteIndented = true };
+        await JsonSerializer.SerializeAsync(createStream, listaUsuarios, options);
 
+        await createStream.DisposeAsync();
+
+        //Console.WriteLine(File.ReadAllText(fileName));
+/*
+        string fileNameread = "TarifadorDatos.json";
+        string jsonString = File.ReadAllText(fileNameread);
+        List<Usuario> weatherForecast = JsonSerializer.Deserialize<List<Usuario>>(jsonString)!;
+
+        Console.WriteLine($"ci: {weatherForecast[1].nombreCompleto}");
+
+*/
         Tarifador tarifador = new Tarifador();
         List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
