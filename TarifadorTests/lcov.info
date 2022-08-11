@@ -272,24 +272,8 @@ DA:6,1
 DA:7,1
 DA:8,1
 FN:2,System.Void Scooter::.ctor()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 FNDA:0,System.Void Scooter::.ctor()
 DA:3,0
->>>>>>> fb247ae (added coverage configuration)
-=======
-FNDA:1,System.Void Scooter::.ctor()
-DA:3,1
->>>>>>> 84ebe51 (unit tests of Scooter and Triciclo added)
-=======
-FNDA:0,System.Void Scooter::.ctor()
-DA:3,0
->>>>>>> df7d6a7 (added method in Icov.info)
-=======
-FNDA:1,System.Void Scooter::.ctor()
-DA:3,1
->>>>>>> 88f9269 (unnecessary imports removed)
 LF:4
 LH:4
 BRF:0
@@ -581,14 +565,5 @@ LH:4
 BRF:0
 BRH:0
 FNF:2
-<<<<<<< HEAD
-<<<<<<< HEAD
-FNH:2
->>>>>>> fb247ae (added coverage configuration)
-=======
 FNH:0
->>>>>>> df7d6a7 (added method in Icov.info)
-=======
-FNH:2
->>>>>>> 88f9269 (unnecessary imports removed)
 end_of_record
