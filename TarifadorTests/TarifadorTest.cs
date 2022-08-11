@@ -28,5 +28,10 @@ namespace TarifadorTests
             List<Usuario> usuarios = new List<Usuario>();        
             tarifador.addListaUsuarios(usuarios);
         }
+
+        [Test]
+        public void tarifarTest(){
+            List<Usuario> usuarios = new List<Usuario>();
+        }
     }
 }

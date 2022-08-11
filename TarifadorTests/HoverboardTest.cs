@@ -1,5 +1,3 @@
-using hoverboardN;
-
 namespace TarifadorTests
 {
     [TestFixture]
