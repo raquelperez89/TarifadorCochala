@@ -24,47 +24,50 @@ namespace TarifadorTests
             new DescuentoCumple(),
             new DescuentoEstudiante()};
 
-            registro.calcularMontoRegistro(usuario, descuentos);
+            registro.calcularMontoRegistro(usuario, descuentos, impuesto);
             double montoTotal = registro.montoRegistro;
 
-            Assert.AreEqual(7.0, montoTotal);
+            Assert.AreEqual(8.05, montoTotal);
         }
 
         [Test]
         public void calcularMontoRegistroEstudiante()
         {
             PlanRegular planRegular = new PlanRegular();
+            IImpuesto impuesto = new ImpuestoBoliviano();
             Usuario usuario = new Usuario(1, "Pedro", new DateOnly(2000, 08, 10), "Estudiante", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
             new DescuentoEstudiante()};
 
-            registro.calcularMontoRegistro(usuario, descuentos);
+            registro.calcularMontoRegistro(usuario, descuentos, impuesto);
             double montoTotal = registro.montoRegistro;
 
-            Assert.AreEqual(5.95, montoTotal);
+            Assert.AreEqual(6.8425, montoTotal);
         }
 
         [Test]
         public void calcularMontoRegistroEstudianteConDescuentoCumpleaño()
         {
             PlanRegular planRegular = new PlanRegular();
+            IImpuesto impuesto = new ImpuestoBoliviano();
             DateOnly today = DateOnly.FromDateTime(DateTime.Now);
             Usuario usuario = new Usuario(1, "Pedro", today, "Estudiante", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
             new DescuentoEstudiante()};
 
-            registro.calcularMontoRegistro(usuario, descuentos);
+            registro.calcularMontoRegistro(usuario, descuentos, impuesto);
             double montoTotal = registro.montoRegistro;
 
-            Assert.AreEqual(3.8500000000000005d, montoTotal);
+            Assert.AreEqual(4.4275, montoTotal);
         }
 
         [Test]
         public void calcularMontoRegistroConDescuentoDel90PorCiento()
         {
             PlanRegular planRegular = new PlanRegular();
+            IImpuesto impuesto = new ImpuestoBoliviano();
             Usuario usuario = new Usuario(1, "Pedro", new DateOnly(2000, 08, 12), "Estudiante", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
@@ -73,10 +76,10 @@ namespace TarifadorTests
             new DescuentoEstudiante(),
             new DescuentoEstudiante()};
 
-            registro.calcularMontoRegistro(usuario, descuentos);
+            registro.calcularMontoRegistro(usuario, descuentos, impuesto);
             double monto = registro.montoRegistro;
 
-            Assert.AreEqual(3.5, monto);
+            Assert.AreEqual(4.025, monto);
         }
         
     }
