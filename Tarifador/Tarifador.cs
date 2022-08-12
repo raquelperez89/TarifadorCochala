@@ -4,6 +4,10 @@ namespace TarifadorMain{
 public class Tarifador
 {
     private List<Usuario> usuarios = new List<Usuario>();
+    public List<Usuario> getListaUsuario()
+    {
+        return this.usuarios;
+    }
     public void addUsuario(Usuario usuario)
     {
         usuarios.Add(usuario);
