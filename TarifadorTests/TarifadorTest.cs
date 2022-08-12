@@ -60,6 +60,10 @@ namespace TarifadorTests
                 new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
                 new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
             };
+            List<IDescuento>  descuento = new List<IDescuento>()
+            {
+                new DescuentoEstudiante()
+            };
                        
             tarifador.addListaUsuarios(listaUsuarios);
             tarifador.aniadirRegistroAUsuario(89898, registro);
