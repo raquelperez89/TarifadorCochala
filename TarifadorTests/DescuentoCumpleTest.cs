@@ -14,8 +14,7 @@ namespace TarifadorTests
 
         [TestCase(04, 11)]
         [TestCase(01, 11)]
-        [TestCase(09, 11)]
-        [TestCase(02, 18)]
+        [TestCase(08, 18)]
         public void getPorcentajeDescuentoTest(int mes, int dia)
         {
             IPlan plan = new PlanMensual();
