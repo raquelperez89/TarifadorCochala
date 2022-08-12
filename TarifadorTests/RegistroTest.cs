@@ -1,4 +1,3 @@
-
 namespace TarifadorTests
 {
     public class RegistroTest
