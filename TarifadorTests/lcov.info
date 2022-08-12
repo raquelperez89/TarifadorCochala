@@ -116,10 +116,26 @@ DA:16,0
 DA:17,0
 DA:18,0
 DA:19,0
+=======
+FN:7,System.Void Program::Main(System.String[])
+FNDA:0,System.Void Program::Main(System.String[])
+DA:8,0
+DA:9,0
+DA:10,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+>>>>>>> fb247ae (added coverage configuration)
 DA:21,0
 DA:22,0
 DA:23,0
 DA:24,0
+<<<<<<< HEAD
 DA:25,0
 DA:26,0
 DA:27,0
@@ -151,6 +167,30 @@ DA:68,0
 DA:69,0
 DA:73,0
 LF:41
+=======
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:58,0
+LF:36
+>>>>>>> fb247ae (added coverage configuration)
 LH:0
 BRF:0
 BRH:0
@@ -159,35 +199,35 @@ FNH:0
 end_of_record
 SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Scooter.cs
 FN:6,System.Double Scooter::getTarifaAgregada()
-FNDA:0,System.Double Scooter::getTarifaAgregada()
-DA:7,0
-DA:8,0
-DA:9,0
+FNDA:2,System.Double Scooter::getTarifaAgregada()
+DA:7,2
+DA:8,2
+DA:9,2
 FN:3,System.Void Scooter::.ctor()
-FNDA:0,System.Void Scooter::.ctor()
-DA:4,0
+FNDA:2,System.Void Scooter::.ctor()
+DA:4,2
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Triciclo.cs
 FN:5,System.Double Triciclo::getTarifaAgregada()
-FNDA:0,System.Double Triciclo::getTarifaAgregada()
-DA:6,0
-DA:7,0
-DA:8,0
+FNDA:2,System.Double Triciclo::getTarifaAgregada()
+DA:6,2
+DA:7,2
+DA:8,2
 FN:2,System.Void Triciclo::.ctor()
-FNDA:0,System.Void Triciclo::.ctor()
-DA:3,0
+FNDA:2,System.Void Triciclo::.ctor()
+DA:3,2
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Usuario.cs
 FN:4,System.Int32 UsuarioN.Usuario::get_ci()
@@ -217,10 +257,42 @@ DA:28,0
 DA:29,0
 FN:30,System.Void UsuarioN.Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
 FNDA:0,System.Void UsuarioN.Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
+=======
+FN:3,System.Int32 Usuario::get_ci()
+FNDA:0,System.Int32 Usuario::get_ci()
+DA:4,0
+FN:4,System.String Usuario::get_nombreCompleto()
+FNDA:0,System.String Usuario::get_nombreCompleto()
+DA:5,0
+FN:5,System.DateOnly Usuario::get_fechaNacimiento()
+FNDA:0,System.DateOnly Usuario::get_fechaNacimiento()
+DA:6,0
+FN:6,System.String Usuario::get_ocupacion()
+FNDA:0,System.String Usuario::get_ocupacion()
+DA:7,0
+FN:7,IPlan Usuario::get_plan()
+FNDA:0,IPlan Usuario::get_plan()
+DA:8,0
+FN:20,System.Void Usuario::mostrarMontoPorPagar()
+FNDA:0,System.Void Usuario::mostrarMontoPorPagar()
+DA:21,0
+DA:22,0
+DA:23,0
+FN:24,System.Void Usuario::agregarNuevoRegistro(Registro)
+FNDA:0,System.Void Usuario::agregarNuevoRegistro(Registro)
+DA:25,0
+DA:26,0
+DA:27,0
+FN:28,System.Void Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuento>)
+FNDA:0,System.Void Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuento>)
+DA:29,0
+DA:30,0
+>>>>>>> fb247ae (added coverage configuration)
 DA:31,0
 DA:32,0
 DA:33,0
 DA:34,0
+<<<<<<< HEAD
 DA:35,0
 DA:36,0
 DA:38,0
@@ -304,8 +376,8 @@ DA:18,0
 DA:19,0
 DA:20,0
 DA:21,0
-FN:9,System.Void RegistroN.Registro::.ctor(IVehiculoN.IVehiculo,System.Int32)
-FNDA:0,System.Void RegistroN.Registro::.ctor(IVehiculoN.IVehiculo,System.Int32)
+FN:9,System.Void RegistroN.Registro::.ctor(IVehiculo,System.Int32)
+FNDA:0,System.Void RegistroN.Registro::.ctor(IVehiculo,System.Int32)
 DA:10,0
 DA:11,0
 DA:12,0
@@ -331,6 +403,38 @@ DA:16,0
 DA:17,0
 LF:6
 LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Hoverboard.cs
+FN:6,System.Double hoverboardN.Hoverboard::getTarifaAgregada()
+FNDA:1,System.Double hoverboardN.Hoverboard::getTarifaAgregada()
+DA:7,1
+DA:8,1
+DA:9,1
+FN:3,System.Void hoverboardN.Hoverboard::.ctor()
+FNDA:1,System.Void hoverboardN.Hoverboard::.ctor()
+DA:4,1
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Bicicleta.cs
+FN:6,System.Double tarifador.Bicicleta::getTarifaAgregada()
+FNDA:1,System.Double tarifador.Bicicleta::getTarifaAgregada()
+DA:7,1
+DA:8,1
+DA:9,1
+FN:3,System.Void tarifador.Bicicleta::.ctor()
+FNDA:1,System.Void tarifador.Bicicleta::.ctor()
+DA:4,1
+LF:4
+LH:4
 BRF:0
 BRH:0
 FNF:2
