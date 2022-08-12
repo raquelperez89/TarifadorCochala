@@ -6,7 +6,7 @@ namespace TarifadorTests
         private Registro registro;
         private IVehiculo vehiculo = new Scooter();
         private int minutosDeUso = 10;
-        
+
         [SetUp]
         public void Setup()
         {
@@ -23,15 +23,11 @@ namespace TarifadorTests
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
             new DescuentoEstudiante()};
-            try
-            {
-                registro.calcularMontoRegistro(usuario, descuentos, impuesto);
-                Assert.IsTrue(true);
-            }
-            catch
-            {
-                Assert.IsTrue(false);
-            }
+            
+             registro.calcularMontoRegistro(usuario, descuentos, impuesto);
+            double monto = registro.montoRegistro;
+
+            Assert.AreEqual(7.0, monto);
         }
     }
 }
