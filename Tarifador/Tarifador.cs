@@ -2,9 +2,18 @@
 public class Tarifador
 {
     private List<Usuario> usuarios = new List<Usuario>();
+    public List<Usuario> getListaUsuario()
+    {
+        return this.usuarios;
+    }
     public void addUsuario(Usuario usuario)
     {
         usuarios.Add(usuario);
+    }
+
+    public List<Usuario> getListaUsuarios()
+    {
+        return usuarios;
     }
 
     public void addListaUsuarios(List<Usuario> listaUsuarios)

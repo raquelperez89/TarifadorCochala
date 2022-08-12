@@ -5,6 +5,7 @@ namespace TarifadorTests
     public class DescuentoCumpleTest
     {
         private DescuentoCumple descuentoCumple;
+        private DateOnly today = DateOnly.FromDateTime(DateTime.Now);
         [SetUp]
         public void Setup()
         {
