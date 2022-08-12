@@ -6,11 +6,13 @@ namespace TarifadorTests
     class UsuariTest
     {
         private Usuario usuario;
+        private IImpuesto impuesto;
 
         [SetUp]
         public void SetUp()
         {
             IPlan planRegular = new PlanRegular();
+            impuesto= new ImpuestoBoliviano();
             usuario =  new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", planRegular);
         }
 

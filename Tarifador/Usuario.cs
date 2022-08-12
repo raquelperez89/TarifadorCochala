@@ -28,10 +28,10 @@ public class Usuario{
         this.listaRegistros.Add(registro);
     }
 
-    public void calcularMontoTotalRegistros(List<IDescuento> descuentos){
+    public void calcularMontoTotalRegistros(List<IDescuento> descuentos, IImpuesto impuesto){
         this.listaRegistros.ForEach(registro => 
         {
-            registro.calcularMontoRegistro(this, descuentos);
+            registro.calcularMontoRegistro(this, descuentos, impuesto);
             this.montoPorPagar = this.montoPorPagar + registro.montoRegistro;
         });
         
