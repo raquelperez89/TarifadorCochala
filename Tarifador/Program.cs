@@ -1,6 +1,4 @@
-﻿
-global using IPlanN;
-global using UsuarioN;
+﻿global using UsuarioN;
 global using IDescuentoN;
 global using RegistroN;
 using TarifadorMain;

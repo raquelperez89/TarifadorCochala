@@ -1,6 +1,4 @@
-namespace IPlanN{
-    public interface IPlan
-    {
-        double cobroTotalPorMinuto(IVehiculo tipoVehiculo);
-    }
+public interface IPlan
+{
+    double cobroTotalPorMinuto(IVehiculo tipoVehiculo);
 }

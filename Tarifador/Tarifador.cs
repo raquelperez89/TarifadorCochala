@@ -13,6 +13,11 @@ public class Tarifador
         usuarios.Add(usuario);
     }
 
+    public List<Usuario> getListaUsuarios()
+    {
+        return usuarios;
+    }
+
     public void addListaUsuarios(List<Usuario> listaUsuarios)
     {
         this.usuarios = listaUsuarios;

@@ -1,112 +1,112 @@
-SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Bicicleta.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Bicicleta.cs
 FN:6,System.Double Bicicleta::getTarifaAgregada()
 FNDA:3,System.Double Bicicleta::getTarifaAgregada()
 DA:7,3
 DA:8,3
 DA:9,3
 FN:3,System.Void Bicicleta::.ctor()
-FNDA:0,System.Void Bicicleta::.ctor()
-DA:4,0
+FNDA:3,System.Void Bicicleta::.ctor()
+DA:4,3
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\DescuentoCumple.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\DescuentoCumple.cs
 FN:5,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-FNDA:0,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-DA:6,0
-DA:7,0
-DA:8,0
-DA:9,0
-DA:10,0
-DA:12,0
-DA:13,0
-BRDA:8,33,0,0
-BRDA:8,33,1,0
-BRDA:8,63,0,0
-BRDA:8,63,1,0
+FNDA:5,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
+DA:6,5
+DA:7,5
+DA:8,5
+DA:9,2
+DA:10,2
+DA:12,3
+DA:13,5
+BRDA:8,33,0,3
+BRDA:8,33,1,2
+BRDA:8,63,0,2
+BRDA:8,63,1,3
 FN:2,System.Void DescuentoCumple::.ctor()
-FNDA:0,System.Void DescuentoCumple::.ctor()
-DA:3,0
+FNDA:5,System.Void DescuentoCumple::.ctor()
+DA:3,5
 LF:8
-LH:0
+LH:8
 BRF:4
-BRH:0
+BRH:4
 FNF:2
 FNH:0
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\DescuentoEstudiante.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\DescuentoEstudiante.cs
 FN:3,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
-FNDA:0,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
-DA:4,0
-DA:6,0
-DA:8,0
-DA:10,0
-DA:11,0
-BRDA:6,19,0,0
-BRDA:6,19,1,0
+FNDA:4,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
+DA:4,4
+DA:6,6
+DA:8,2
+DA:10,2
+DA:11,4
+BRDA:6,19,0,2
+BRDA:6,19,1,2
 FN:2,System.Void DescuentoEstudiante::.ctor()
-FNDA:0,System.Void DescuentoEstudiante::.ctor()
-DA:3,0
+FNDA:4,System.Void DescuentoEstudiante::.ctor()
+DA:3,4
 LF:6
-LH:0
+LH:6
 BRF:2
-BRH:0
+BRH:2
 FNF:2
 FNH:0
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Hoverboard.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Hoverboard.cs
 FN:6,System.Double Hoverboard::getTarifaAgregada()
-FNDA:0,System.Double Hoverboard::getTarifaAgregada()
-DA:7,0
-DA:8,0
-DA:9,0
+FNDA:3,System.Double Hoverboard::getTarifaAgregada()
+DA:7,3
+DA:8,3
+DA:9,3
 FN:3,System.Void Hoverboard::.ctor()
-FNDA:0,System.Void Hoverboard::.ctor()
-DA:4,0
+FNDA:3,System.Void Hoverboard::.ctor()
+DA:4,3
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\PlanMensual.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\PlanMensual.cs
 FN:5,System.Double PlanMensual::cobroTotalPorMinuto(IVehiculo)
-FNDA:0,System.Double PlanMensual::cobroTotalPorMinuto(IVehiculo)
-DA:6,0
-DA:7,0
-DA:8,0
+FNDA:4,System.Double PlanMensual::cobroTotalPorMinuto(IVehiculo)
+DA:6,4
+DA:7,4
+DA:8,4
 FN:2,System.Void PlanMensual::.ctor()
-FNDA:2,System.Void PlanMensual::.ctor()
-DA:3,2
+FNDA:12,System.Void PlanMensual::.ctor()
+DA:3,12
 LF:4
-LH:1
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:1
+FNH:2
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\PlanRegular.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\PlanRegular.cs
 FN:5,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
-FNDA:0,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
-DA:6,0
-DA:7,0
-DA:8,0
+FNDA:5,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
+DA:6,5
+DA:7,5
+DA:8,5
 FN:2,System.Void PlanRegular::.ctor()
-FNDA:0,System.Void PlanRegular::.ctor()
-DA:3,0
+FNDA:7,System.Void PlanRegular::.ctor()
+DA:3,7
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Program.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Program.cs
 FN:11,System.Void Program/<Main>d__0::MoveNext()
 FNDA:0,System.Void Program/<Main>d__0::MoveNext()
 DA:12,0
@@ -154,186 +154,163 @@ LF:41
 LH:0
 BRF:0
 BRH:0
-FNF:1
-FNH:0
+FNF:7
+FNH:4
 end_of_record
-SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Scooter.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Scooter.cs
 FN:6,System.Double Scooter::getTarifaAgregada()
-FNDA:0,System.Double Scooter::getTarifaAgregada()
-DA:7,0
-DA:8,0
-DA:9,0
+FNDA:4,System.Double Scooter::getTarifaAgregada()
+DA:7,4
+DA:8,4
+DA:9,4
 FN:3,System.Void Scooter::.ctor()
-FNDA:0,System.Void Scooter::.ctor()
-DA:4,0
+FNDA:5,System.Void Scooter::.ctor()
+DA:4,5
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
-SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Triciclo.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Triciclo.cs
 FN:5,System.Double Triciclo::getTarifaAgregada()
-FNDA:0,System.Double Triciclo::getTarifaAgregada()
-DA:6,0
-DA:7,0
-DA:8,0
+FNDA:3,System.Double Triciclo::getTarifaAgregada()
+DA:6,3
+DA:7,3
+DA:8,3
 FN:2,System.Void Triciclo::.ctor()
-FNDA:0,System.Void Triciclo::.ctor()
-DA:3,0
+FNDA:3,System.Void Triciclo::.ctor()
+DA:3,3
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
-SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Usuario.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Usuario.cs
 FN:4,System.Int32 UsuarioN.Usuario::get_ci()
-FNDA:2,System.Int32 UsuarioN.Usuario::get_ci()
-DA:5,2
+FNDA:11,System.Int32 UsuarioN.Usuario::get_ci()
+DA:5,11
 FN:5,System.String UsuarioN.Usuario::get_nombreCompleto()
-FNDA:2,System.String UsuarioN.Usuario::get_nombreCompleto()
-DA:6,2
+FNDA:13,System.String UsuarioN.Usuario::get_nombreCompleto()
+DA:6,13
 FN:7,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-FNDA:2,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-DA:8,2
+FNDA:19,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
+DA:8,19
 FN:8,System.String UsuarioN.Usuario::get_ocupacion()
-FNDA:2,System.String UsuarioN.Usuario::get_ocupacion()
-DA:9,2
+FNDA:15,System.String UsuarioN.Usuario::get_ocupacion()
+DA:9,15
 FN:9,IPlanN.IPlan UsuarioN.Usuario::get_plan()
 FNDA:12,IPlanN.IPlan UsuarioN.Usuario::get_plan()
 DA:10,12
 FN:22,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
-FNDA:0,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
-DA:23,0
-DA:24,0
-DA:25,0
+FNDA:1,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
+DA:23,1
+DA:24,1
+DA:25,1
 FN:26,System.Void UsuarioN.Usuario::agregarNuevoRegistro(RegistroN.Registro)
-FNDA:0,System.Void UsuarioN.Usuario::agregarNuevoRegistro(RegistroN.Registro)
-DA:27,0
-DA:28,0
-DA:29,0
+FNDA:2,System.Void UsuarioN.Usuario::agregarNuevoRegistro(RegistroN.Registro)
+DA:27,2
+DA:28,2
+DA:29,2
 FN:30,System.Void UsuarioN.Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
-FNDA:0,System.Void UsuarioN.Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
-DA:31,0
-DA:32,0
-DA:33,0
-DA:34,0
-DA:35,0
-DA:36,0
-DA:38,0
+FNDA:1,System.Void UsuarioN.Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
+DA:31,1
+DA:32,1
+DA:33,1
+DA:34,1
+DA:35,1
+DA:36,2
+DA:38,1
 FN:10,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
-FNDA:2,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
-DA:11,2
-DA:13,2
-DA:15,4
-DA:16,2
-DA:17,2
-DA:18,2
-DA:19,2
-DA:20,2
-DA:21,2
+FNDA:11,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
+DA:11,11
+DA:13,11
+DA:15,22
+DA:16,11
+DA:17,11
+DA:18,11
+DA:19,11
+DA:20,11
+DA:21,11
 LF:27
-LH:14
+LH:27
 BRF:0
 BRH:0
 FNF:9
-FNH:6
+FNH:9
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Tarifador.cs
-FN:7,System.Collections.Generic.List`1<UsuarioN.Usuario> TarifadorMain.Tarifador::getListaUsuario()
-FNDA:2,System.Collections.Generic.List`1<UsuarioN.Usuario> TarifadorMain.Tarifador::getListaUsuario()
-DA:8,2
-DA:9,2
-DA:10,2
-FN:11,System.Void TarifadorMain.Tarifador::addUsuario(UsuarioN.Usuario)
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Tarifador.cs
+FN:7,System.Void TarifadorMain.Tarifador::addUsuario(UsuarioN.Usuario)
 FNDA:1,System.Void TarifadorMain.Tarifador::addUsuario(UsuarioN.Usuario)
-DA:12,1
+DA:8,1
+DA:9,1
+DA:10,1
+FN:12,System.Void TarifadorMain.Tarifador::addListaUsuarios(System.Collections.Generic.List`1<UsuarioN.Usuario>)
+FNDA:1,System.Void TarifadorMain.Tarifador::addListaUsuarios(System.Collections.Generic.List`1<UsuarioN.Usuario>)
 DA:13,1
 DA:14,1
-FN:16,System.Void TarifadorMain.Tarifador::addListaUsuarios(System.Collections.Generic.List`1<UsuarioN.Usuario>)
-FNDA:1,System.Void TarifadorMain.Tarifador::addListaUsuarios(System.Collections.Generic.List`1<UsuarioN.Usuario>)
-DA:17,1
-DA:18,1
-DA:19,1
-FN:21,System.Void TarifadorMain.Tarifador::tarifar(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
+DA:15,1
+FN:17,System.Void TarifadorMain.Tarifador::tarifar(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
 FNDA:0,System.Void TarifadorMain.Tarifador::tarifar(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
-DA:22,0
-=======
-FNDA:2,System.Int32 UsuarioN.Usuario::get_ci()
-DA:5,2
-FN:5,System.String UsuarioN.Usuario::get_nombreCompleto()
-FNDA:2,System.String UsuarioN.Usuario::get_nombreCompleto()
-DA:6,2
-FN:7,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-FNDA:2,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-DA:8,2
-FN:8,System.String UsuarioN.Usuario::get_ocupacion()
-FNDA:2,System.String UsuarioN.Usuario::get_ocupacion()
-DA:9,2
-FN:9,IPlanN.IPlan UsuarioN.Usuario::get_plan()
-FNDA:2,IPlanN.IPlan UsuarioN.Usuario::get_plan()
-DA:10,2
-FN:22,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
-FNDA:0,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
->>>>>>> fd603c7 (addListaUsuarios test creada)
-DA:23,0
-DA:24,0
-FN:25,System.Void TarifadorMain.Tarifador::aniadirRegistroAUsuario(System.Int32,RegistroN.Registro)
-FNDA:0,System.Void TarifadorMain.Tarifador::aniadirRegistroAUsuario(System.Int32,RegistroN.Registro)
-DA:26,0
-DA:27,0
-DA:28,0
-DA:29,0
-DA:30,0
-DA:31,0
-DA:32,0
-BRDA:28,44,0,0
-BRDA:28,44,1,0
-FN:33,System.Void TarifadorMain.Tarifador::mostrarMontoPorUsuario()
-FNDA:0,System.Void TarifadorMain.Tarifador::mostrarMontoPorUsuario()
-DA:34,0
-DA:35,0
-DA:36,0
-FN:5,System.Void TarifadorMain.Tarifador::.ctor()
-FNDA:3,System.Void TarifadorMain.Tarifador::.ctor()
-DA:6,3
-LF:23
-LH:10
-BRF:2
-BRH:0
-FNF:7
-FNH:4
-end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Registro.cs
-FN:4,IVehiculo RegistroN.Registro::get_vehiculo()
-FNDA:0,IVehiculo RegistroN.Registro::get_vehiculo()
-DA:5,0
-FN:5,System.Int32 RegistroN.Registro::get_minutos()
-FNDA:0,System.Int32 RegistroN.Registro::get_minutos()
-DA:6,0
-FN:6,System.DateOnly RegistroN.Registro::get_fecha()
-FNDA:0,System.DateOnly RegistroN.Registro::get_fecha()
-DA:7,0
-FN:7,System.Double RegistroN.Registro::get_montoRegistro()
-FNDA:0,System.Double RegistroN.Registro::get_montoRegistro()
-DA:8,0
-FN:16,System.Void RegistroN.Registro::calcularMontoRegistro(UsuarioN.Usuario,System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
-FNDA:0,System.Void RegistroN.Registro::calcularMontoRegistro(UsuarioN.Usuario,System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
-DA:17,0
 DA:18,0
 DA:19,0
 DA:20,0
-DA:21,0
+FN:21,System.Void TarifadorMain.Tarifador::aniadirRegistroAUsuario(System.Int32,RegistroN.Registro)
+FNDA:0,System.Void TarifadorMain.Tarifador::aniadirRegistroAUsuario(System.Int32,RegistroN.Registro)
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+BRDA:24,44,0,0
+BRDA:24,44,1,0
+FN:29,System.Void TarifadorMain.Tarifador::mostrarMontoPorUsuario()
+FNDA:0,System.Void TarifadorMain.Tarifador::mostrarMontoPorUsuario()
+DA:30,0
+DA:31,0
+DA:32,0
+FN:5,System.Void TarifadorMain.Tarifador::.ctor()
+FNDA:3,System.Void TarifadorMain.Tarifador::.ctor()
+DA:6,3
+LF:20
+LH:7
+BRF:2
+BRH:0
+FNF:6
+FNH:3
+end_of_record
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Registro.cs
+FN:4,IVehiculo RegistroN.Registro::get_vehiculo()
+FNDA:3,IVehiculo RegistroN.Registro::get_vehiculo()
+DA:5,3
+FN:5,System.Int32 RegistroN.Registro::get_minutos()
+FNDA:3,System.Int32 RegistroN.Registro::get_minutos()
+DA:6,3
+FN:6,System.DateOnly RegistroN.Registro::get_fecha()
+FNDA:2,System.DateOnly RegistroN.Registro::get_fecha()
+DA:7,2
+FN:7,System.Double RegistroN.Registro::get_montoRegistro()
+FNDA:7,System.Double RegistroN.Registro::get_montoRegistro()
+DA:8,7
+FN:16,System.Void RegistroN.Registro::calcularMontoRegistro(UsuarioN.Usuario,System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
+FNDA:1,System.Void RegistroN.Registro::calcularMontoRegistro(UsuarioN.Usuario,System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
+DA:17,1
+DA:18,3
+DA:19,1
+DA:20,1
+DA:21,1
 FN:9,System.Void RegistroN.Registro::.ctor(IVehiculo,System.Int32)
-FNDA:0,System.Void RegistroN.Registro::.ctor(IVehiculo,System.Int32)
-DA:10,0
-DA:11,0
-DA:12,0
-DA:13,0
-DA:14,0
+FNDA:4,System.Void RegistroN.Registro::.ctor(IVehiculo,System.Int32)
+DA:10,4
+DA:11,2
+DA:12,2
+DA:13,2
+DA:14,2
 LF:14
 LH:0
 BRF:0
@@ -341,7 +318,7 @@ BRH:0
 FNF:6
 FNH:0
 end_of_record
-SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\DateOnlyJsonConverter.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\DateOnlyJsonConverter.cs
 FN:9,System.DateOnly TarifadorJson.DateOnlyJsonConverter::Read(System.Text.Json.Utf8JsonReader&,System.Type,System.Text.Json.JsonSerializerOptions)
 FNDA:0,System.DateOnly TarifadorJson.DateOnlyJsonConverter::Read(System.Text.Json.Utf8JsonReader&,System.Type,System.Text.Json.JsonSerializerOptions)
 DA:10,0
