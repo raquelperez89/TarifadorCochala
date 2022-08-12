@@ -14,6 +14,7 @@ namespace TarifadorTests
         [TestCase("Estudiante", 0.15)]
         [TestCase("estudiante", 0)]
         [TestCase("plomero", 0)]
+        [TestCase(null, 0)]
         public void getPorcentajeDescuentoTest(string ocupacion, double expected)
         {
             IPlan plan = new PlanMensual();

@@ -1,4 +1,3 @@
-global using UsuarioN;
 
 namespace TarifadorTests
 {
