@@ -1,7 +1,4 @@
-﻿global using UsuarioN;
-global using IDescuentoN;
-global using RegistroN;
-using TarifadorMain;
+
 using System.Text.Json;
 
 class Program

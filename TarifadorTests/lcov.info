@@ -1,78 +1,79 @@
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Bicicleta.cs
 FN:6,System.Double Bicicleta::getTarifaAgregada()
-FNDA:3,System.Double Bicicleta::getTarifaAgregada()
-DA:7,3
-DA:8,3
-DA:9,3
+FNDA:2,System.Double Bicicleta::getTarifaAgregada()
+DA:7,2
+DA:8,2
+DA:9,2
 FN:3,System.Void Bicicleta::.ctor()
-FNDA:3,System.Void Bicicleta::.ctor()
-DA:4,3
+FNDA:2,System.Void Bicicleta::.ctor()
+DA:4,2
 LF:4
-LH:4
+LH:0
 BRF:0
 BRH:0
 FNF:2
-FNH:2
+FNH:0
 end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\DescuentoCumple.cs
 FN:5,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-FNDA:5,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
-DA:6,5
-DA:7,5
-DA:8,5
-DA:9,2
-DA:10,2
-DA:12,3
-DA:13,5
-BRDA:8,33,0,3
-BRDA:8,33,1,2
-BRDA:8,63,0,2
-BRDA:8,63,1,3
+FNDA:1,System.Double DescuentoCumple::getPorcentajeDescuento(UsuarioN.Usuario)
+DA:6,1
+DA:7,1
+DA:8,1
+DA:9,0
+DA:10,0
+DA:12,1
+DA:13,1
+BRDA:8,33,0,0
+BRDA:8,33,1,1
+BRDA:8,63,0,0
+BRDA:8,63,1,1
 FN:2,System.Void DescuentoCumple::.ctor()
-FNDA:5,System.Void DescuentoCumple::.ctor()
-DA:3,5
+FNDA:1,System.Void DescuentoCumple::.ctor()
+DA:3,1
 LF:8
-LH:8
+LH:6
 BRF:4
-BRH:4
+BRH:2
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\DescuentoEstudiante.cs
 FN:3,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
-FNDA:4,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
-DA:4,4
-DA:6,6
-DA:8,2
-DA:10,2
-DA:11,4
-BRDA:6,19,0,2
-BRDA:6,19,1,2
+FNDA:1,System.Double DescuentoEstudiante::getPorcentajeDescuento(UsuarioN.Usuario)
+DA:4,1
+DA:6,2
+DA:8,1
+DA:10,0
+DA:11,1
+BRDA:6,19,0,1
+BRDA:6,19,1,0
 FN:2,System.Void DescuentoEstudiante::.ctor()
-FNDA:4,System.Void DescuentoEstudiante::.ctor()
-DA:3,4
+FNDA:1,System.Void DescuentoEstudiante::.ctor()
+DA:3,1
 LF:6
-LH:6
+LH:5
 BRF:2
-BRH:2
+BRH:1
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Hoverboard.cs
 FN:6,System.Double Hoverboard::getTarifaAgregada()
-FNDA:3,System.Double Hoverboard::getTarifaAgregada()
-DA:7,3
-DA:8,3
-DA:9,3
+FNDA:2,System.Double Hoverboard::getTarifaAgregada()
+DA:7,2
+DA:8,2
+DA:9,2
 FN:3,System.Void Hoverboard::.ctor()
-FNDA:3,System.Void Hoverboard::.ctor()
-DA:4,3
+FNDA:2,System.Void Hoverboard::.ctor()
+DA:4,2
 LF:4
-LH:4
+LH:0
 BRF:0
 BRH:0
+>>>>>>> 7425601 (config)
 FNF:2
-FNH:2
+FNH:0
 end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\PlanMensual.cs
 FN:5,System.Double PlanMensual::cobroTotalPorMinuto(IVehiculo)
@@ -81,8 +82,8 @@ DA:6,4
 DA:7,4
 DA:8,4
 FN:2,System.Void PlanMensual::.ctor()
-FNDA:12,System.Void PlanMensual::.ctor()
-DA:3,12
+FNDA:4,System.Void PlanMensual::.ctor()
+DA:3,4
 LF:4
 LH:4
 BRF:0
@@ -90,15 +91,15 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\PlanRegular.cs
-FN:5,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
-FNDA:5,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
-DA:6,5
-DA:7,5
-DA:8,5
+SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\PlanRegular.cs
+FN:5,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculoN.IVehiculo)
+FNDA:1,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculoN.IVehiculo)
+DA:6,1
+DA:7,1
+DA:8,1
 FN:2,System.Void PlanRegular::.ctor()
-FNDA:7,System.Void PlanRegular::.ctor()
-DA:3,7
+FNDA:3,System.Void PlanRegular::.ctor()
+DA:3,3
 LF:4
 LH:4
 BRF:0
@@ -159,13 +160,13 @@ FNH:4
 end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Scooter.cs
 FN:6,System.Double Scooter::getTarifaAgregada()
-FNDA:4,System.Double Scooter::getTarifaAgregada()
-DA:7,4
-DA:8,4
-DA:9,4
+FNDA:1,System.Double Scooter::getTarifaAgregada()
+DA:7,1
+DA:8,1
+DA:9,1
 FN:3,System.Void Scooter::.ctor()
-FNDA:5,System.Void Scooter::.ctor()
-DA:4,5
+FNDA:2,System.Void Scooter::.ctor()
+DA:4,2
 LF:4
 LH:4
 BRF:0
@@ -175,13 +176,13 @@ FNH:2
 end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Triciclo.cs
 FN:5,System.Double Triciclo::getTarifaAgregada()
-FNDA:3,System.Double Triciclo::getTarifaAgregada()
-DA:6,3
-DA:7,3
-DA:8,3
+FNDA:2,System.Double Triciclo::getTarifaAgregada()
+DA:6,2
+DA:7,2
+DA:8,2
 FN:2,System.Void Triciclo::.ctor()
-FNDA:3,System.Void Triciclo::.ctor()
-DA:3,3
+FNDA:2,System.Void Triciclo::.ctor()
+DA:3,2
 LF:4
 LH:4
 BRF:0
@@ -191,14 +192,14 @@ FNH:2
 end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Usuario.cs
 FN:4,System.Int32 UsuarioN.Usuario::get_ci()
-FNDA:11,System.Int32 UsuarioN.Usuario::get_ci()
-DA:5,11
+FNDA:3,System.Int32 UsuarioN.Usuario::get_ci()
+DA:5,3
 FN:5,System.String UsuarioN.Usuario::get_nombreCompleto()
-FNDA:13,System.String UsuarioN.Usuario::get_nombreCompleto()
-DA:6,13
+FNDA:5,System.String UsuarioN.Usuario::get_nombreCompleto()
+DA:6,5
 FN:7,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-FNDA:19,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
-DA:8,19
+FNDA:4,System.DateOnly UsuarioN.Usuario::get_fechaNacimiento()
+DA:8,4
 FN:8,System.String UsuarioN.Usuario::get_ocupacion()
 FNDA:15,System.String UsuarioN.Usuario::get_ocupacion()
 DA:9,15
