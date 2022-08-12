@@ -1,6 +1,4 @@
 using NUnit.Framework;
-using RegistroN;
-using IDescuentoN;
 namespace TarifadorTests
 {
     public class RegistroTest
