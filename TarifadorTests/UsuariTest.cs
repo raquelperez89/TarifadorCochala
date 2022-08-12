@@ -1,6 +1,5 @@
 using NUnit.Framework;
 using RegistroN;
-using IVehiculoN;
 using IDescuentoN;
 namespace TarifadorTests
 {
