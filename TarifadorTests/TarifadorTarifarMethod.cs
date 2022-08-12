@@ -1,5 +1,3 @@
-using NUnit.Framework;
-
 namespace TarifadorTests
 {
     public class TarifadorTarifarMethod

@@ -57,16 +57,22 @@ namespace TarifadorTests
             IPlan plan = new PlanMensual();
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-            new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
-            new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
+                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
             };
-            List<Registro> listaRegistros = new List<Registro>();
+                       
             tarifador.addListaUsuarios(listaUsuarios);
             tarifador.aniadirRegistroAUsuario(89898, registro);
             tarifador.aniadirRegistroAUsuario(89898, registro);
-            
-            Assert.AreNotEqual(listaRegistros.Count,listaUsuarios[1].listaRegistros.Count);
+            listaUsuarios[1].calcularMontoTotalRegistros(descuento);
+
+            List<Registro> listaRegistros = new List<Registro>();
+            double result = listaUsuarios[1].montoPorPagar;
+
+            Assert.AreNotEqual(listaRegistros.Count, listaUsuarios[1].listaRegistros.Count);
+            Assert.AreEqual(30.6, result);
         }
+
         [Test]
         public void aniadirRegistroAUsuarioNullTest(){
             IVehiculo vehiculo = new Bicicleta();
@@ -75,8 +81,8 @@ namespace TarifadorTests
             DateOnly fechaNacimiento = new DateOnly(2000,12,1);
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-            new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
-            new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
+                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
             };
             List<Registro> listaRegistros = new List<Registro>();
             tarifador.addListaUsuarios(listaUsuarios);
