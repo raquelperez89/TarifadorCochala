@@ -1,6 +1,7 @@
-using tarifador;
 using NUnit.Framework;
-
+using RegistroN;
+using IVehiculoN;
+using IDescuentoN;
 namespace TarifadorTests
 {
     [TestFixture]
@@ -16,11 +17,36 @@ namespace TarifadorTests
         }
 
         [Test]
-        public void getTarifaAgregadaTest()
+        public void mostrarMontoPorPagarTest()
         {
-            double result = bicicleta.getTarifaAgregada();
-
-            Assert.AreEqual(result, 0.30);
+            var output = new StringWriter();
+            Console.SetOut(output);
+            usuario.mostrarMontoPorPagar();
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(this.usuario.nombreCompleto + ", deuda: " + this.usuario.montoPorPagar + "\r\n")));
         }
+        [Test]
+        public void agregarNuevoRegistroTest()
+        {
+            List<Registro> listaVacia = new List<Registro>(); 
+            IVehiculo scooter = new Scooter();
+            Registro nuevoRegistro = new Registro(scooter, 40);
+            this.usuario.agregarNuevoRegistro(nuevoRegistro);
+            Assert.AreNotEqual(listaVacia, this.usuario.listaRegistros);
+        }
+        [Test]
+        public void calcularMontoTotalRegistrosTest()
+        {
+            double montoAntesDeCalculo = this.usuario.montoPorPagar; 
+            IVehiculo scooter = new Scooter();
+            Registro nuevoRegistro = new Registro(scooter, 40);
+            List<IDescuento> descuentos = new List<IDescuento>(){
+                new DescuentoCumple(),
+                new DescuentoEstudiante()
+            };
+            this.usuario.agregarNuevoRegistro(nuevoRegistro);
+            this.usuario.calcularMontoTotalRegistros(descuentos);
+            Assert.AreNotEqual(montoAntesDeCalculo, this.usuario.montoPorPagar);
+        }
+
     }
 }
