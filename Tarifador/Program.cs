@@ -1,4 +1,4 @@
-﻿global using IVehiculoN;
+﻿
 global using IPlanN;
 global using UsuarioN;
 global using IDescuentoN;
