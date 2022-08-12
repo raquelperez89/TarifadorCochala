@@ -1,5 +1,6 @@
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Bicicleta.cs
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Bicicleta.cs
 FN:6,System.Double Bicicleta::getTarifaAgregada()
+<<<<<<< HEAD
 <<<<<<< HEAD
 FNDA:0,System.Double Bicicleta::getTarifaAgregada()
 DA:7,0
@@ -12,8 +13,17 @@ DA:8,1
 DA:9,1
 >>>>>>> cc0109ebbcff9c51befa1cf1d521afe5782bf624
 FN:3,System.Void Bicicleta::.ctor()
-FNDA:3,System.Void Bicicleta::.ctor()
-DA:4,3
+FNDA:1,System.Void Bicicleta::.ctor()
+DA:4,1
+=======
+FNDA:3,System.Double Bicicleta::getTarifaAgregada()
+DA:7,3
+DA:8,3
+DA:9,3
+FN:3,System.Void Bicicleta::.ctor()
+FNDA:5,System.Void Bicicleta::.ctor()
+DA:4,5
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LF:4
 LH:4
 BRF:0
@@ -21,6 +31,7 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
+<<<<<<< HEAD
 <<<<<<< HEAD
 SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\DescuentoCumple.cs
 <<<<<<< HEAD
@@ -44,16 +55,33 @@ BRDA:8,33,0,1
 BRDA:8,33,1,0
 BRDA:8,63,0,0
 BRDA:8,63,1,1
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\DescuentoCumple.cs
+FN:5,System.Double DescuentoCumple::getPorcentajeDescuento(Usuario)
+FNDA:10,System.Double DescuentoCumple::getPorcentajeDescuento(Usuario)
+DA:6,10
+DA:7,10
+DA:8,10
+DA:9,3
+DA:10,3
+DA:12,7
+DA:13,10
+BRDA:8,33,0,5
+BRDA:8,33,1,5
+BRDA:8,63,0,3
+BRDA:8,63,1,7
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 FN:2,System.Void DescuentoCumple::.ctor()
-FNDA:1,System.Void DescuentoCumple::.ctor()
-DA:3,1
+FNDA:11,System.Void DescuentoCumple::.ctor()
+DA:3,11
 LF:8
-LH:6
+LH:8
 BRF:4
-BRH:2
+BRH:4
 FNF:2
 FNH:2
 end_of_record
+<<<<<<< HEAD
 <<<<<<< HEAD
 SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\DescuentoEstudiante.cs
 <<<<<<< HEAD
@@ -73,9 +101,21 @@ DA:10,1
 DA:11,3
 BRDA:6,19,0,2
 BRDA:6,19,1,1
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\DescuentoEstudiante.cs
+FN:3,System.Double DescuentoEstudiante::getPorcentajeDescuento(Usuario)
+FNDA:12,System.Double DescuentoEstudiante::getPorcentajeDescuento(Usuario)
+DA:4,12
+DA:6,20
+DA:8,8
+DA:10,4
+DA:11,12
+BRDA:6,19,0,8
+BRDA:6,19,1,4
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 FN:2,System.Void DescuentoEstudiante::.ctor()
-FNDA:2,System.Void DescuentoEstudiante::.ctor()
-DA:3,2
+FNDA:13,System.Void DescuentoEstudiante::.ctor()
+DA:3,13
 LF:6
 LH:6
 BRF:2
@@ -83,7 +123,8 @@ BRH:2
 FNF:2
 FNH:2
 end_of_record
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Hoverboard.cs
+<<<<<<< HEAD
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Hoverboard.cs
 FN:6,System.Double Hoverboard::getTarifaAgregada()
 FNDA:0,System.Double Hoverboard::getTarifaAgregada()
 DA:7,0
@@ -92,14 +133,26 @@ DA:9,0
 FN:3,System.Void Hoverboard::.ctor()
 FNDA:0,System.Void Hoverboard::.ctor()
 DA:4,0
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Hoverboard.cs
+FN:6,System.Double Hoverboard::getTarifaAgregada()
+FNDA:3,System.Double Hoverboard::getTarifaAgregada()
+DA:7,3
+DA:8,3
+DA:9,3
+FN:3,System.Void Hoverboard::.ctor()
+FNDA:3,System.Void Hoverboard::.ctor()
+DA:4,3
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\ImpuestoBoliviano.cs
+<<<<<<< HEAD
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\ImpuestoBoliviano.cs
 FN:5,System.Double ImpuestoBoliviano::applicarImpuesto(System.Double)
 FNDA:3,System.Double ImpuestoBoliviano::applicarImpuesto(System.Double)
 DA:6,3
@@ -115,13 +168,17 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\PlanMensual.cs
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\PlanMensual.cs
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\PlanMensual.cs
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 FN:5,System.Double PlanMensual::cobroTotalPorMinuto(IVehiculo)
 FNDA:3,System.Double PlanMensual::cobroTotalPorMinuto(IVehiculo)
 DA:6,3
 DA:7,3
 DA:8,3
 FN:2,System.Void PlanMensual::.ctor()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 FNDA:2,System.Void PlanMensual::.ctor()
@@ -134,22 +191,35 @@ DA:3,5
 FNDA:1,System.Void PlanMensual::.ctor()
 DA:3,1
 >>>>>>> dc7c7f50372923d1c4196f6de18f3251f6f99475
+=======
+FNDA:17,System.Void PlanMensual::.ctor()
+DA:3,17
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\PlanRegular.cs
+<<<<<<< HEAD
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\PlanRegular.cs
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\PlanRegular.cs
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 FN:5,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
-FNDA:0,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
-DA:6,0
-DA:7,0
-DA:8,0
+FNDA:9,System.Double PlanRegular::cobroTotalPorMinuto(IVehiculo)
+DA:6,9
+DA:7,9
+DA:8,9
 FN:2,System.Void PlanRegular::.ctor()
+<<<<<<< HEAD
 FNDA:0,System.Void PlanRegular::.ctor()
 DA:3,0
+=======
+FNDA:11,System.Void PlanRegular::.ctor()
+DA:3,11
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LF:4
 LH:0
 BRF:0
@@ -157,6 +227,7 @@ BRH:0
 FNF:2
 FNH:0
 end_of_record
+<<<<<<< HEAD
 <<<<<<< HEAD
 SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fundamentals\Proyecto\TarifadorCochala\Tarifador\Program.cs
 <<<<<<< HEAD
@@ -167,6 +238,10 @@ SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fund
 >>>>>>> dc7c7f50372923d1c4196f6de18f3251f6f99475
 FN:6,System.Void Program/<Main>d__0::MoveNext()
 >>>>>>> cc0109ebbcff9c51befa1cf1d521afe5782bf624
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Program.cs
+FN:6,System.Void Program/<Main>d__0::MoveNext()
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 FNDA:0,System.Void Program/<Main>d__0::MoveNext()
 DA:7,0
 DA:8,0
@@ -200,58 +275,34 @@ DA:51,0
 DA:52,0
 DA:53,0
 DA:54,0
+<<<<<<< HEAD
 DA:55,0
 DA:57,0
+=======
+DA:56,0
+DA:58,0
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 DA:59,0
 DA:60,0
 DA:61,0
 DA:62,0
 DA:63,0
 DA:64,0
+<<<<<<< HEAD
 DA:65,0
 DA:69,0
 LF:42
+=======
+DA:68,0
+LF:41
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LH:0
 BRF:0
 BRH:0
 FNF:1
 FNH:0
 end_of_record
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Registro.cs
-FN:3,IVehiculo Registro::get_vehiculo()
-FNDA:6,IVehiculo Registro::get_vehiculo()
-DA:4,6
-FN:4,System.Int32 Registro::get_minutos()
-FNDA:6,System.Int32 Registro::get_minutos()
-DA:5,6
-FN:5,System.DateOnly Registro::get_fecha()
-FNDA:3,System.DateOnly Registro::get_fecha()
-DA:6,3
-FN:6,System.Double Registro::get_montoRegistro()
 <<<<<<< HEAD
-FNDA:0,System.Double Registro::get_montoRegistro()
-DA:7,0
-FN:15,System.Void Registro::calcularMontoRegistro(Usuario,System.Collections.Generic.List`1<IDescuento>)
-FNDA:0,System.Void Registro::calcularMontoRegistro(Usuario,System.Collections.Generic.List`1<IDescuento>)
-DA:16,0
-DA:17,0
-DA:18,0
-DA:19,0
-DA:20,0
-FN:8,System.Void Registro::.ctor(IVehiculo,System.Int32)
-FNDA:0,System.Void Registro::.ctor(IVehiculo,System.Int32)
-DA:9,0
-DA:10,0
-DA:11,0
-DA:12,0
-DA:13,0
-LF:14
-LH:14
-BRF:0
-BRH:0
-FNF:1
-FNH:0
-end_of_record
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Registro.cs
 FN:3,IVehiculo Registro::get_vehiculo()
 FNDA:0,IVehiculo Registro::get_vehiculo()
@@ -290,9 +341,58 @@ BRF:0
 BRH:0
 FNF:6
 FNH:6
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Registro.cs
+FN:3,IVehiculo Registro::get_vehiculo()
+FNDA:13,IVehiculo Registro::get_vehiculo()
+DA:4,13
+FN:4,System.Int32 Registro::get_minutos()
+FNDA:13,System.Int32 Registro::get_minutos()
+DA:5,13
+FN:5,System.DateOnly Registro::get_fecha()
+FNDA:8,System.DateOnly Registro::get_fecha()
+DA:6,8
+FN:6,System.Double Registro::get_montoRegistro()
+FNDA:33,System.Double Registro::get_montoRegistro()
+DA:7,33
+FN:18,System.Double Registro::limitarDescuentos(System.Double,System.Double)
+FNDA:5,System.Double Registro::limitarDescuentos(System.Double,System.Double)
+DA:19,5
+DA:20,5
+DA:21,1
+DA:22,1
+DA:24,4
+DA:25,5
+BRDA:20,7,0,1
+BRDA:20,7,1,4
+FN:26,System.Void Registro::calcularMontoRegistro(Usuario,System.Collections.Generic.List`1<IDescuento>)
+FNDA:5,System.Void Registro::calcularMontoRegistro(Usuario,System.Collections.Generic.List`1<IDescuento>)
+DA:27,5
+DA:28,18
+DA:29,5
+DA:30,5
+DA:31,5
+DA:32,5
+FN:8,System.Void Registro::.ctor(IVehiculo,System.Int32)
+FNDA:8,System.Void Registro::.ctor(IVehiculo,System.Int32)
+DA:9,8
+DA:11,8
+DA:12,8
+DA:13,8
+DA:14,8
+DA:15,8
+DA:16,8
+LF:23
+LH:23
+BRF:2
+BRH:2
+FNF:7
+FNH:7
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 end_of_record
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Scooter.cs
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Scooter.cs
 FN:6,System.Double Scooter::getTarifaAgregada()
+<<<<<<< HEAD
 FNDA:0,System.Double Scooter::getTarifaAgregada()
 DA:7,0
 DA:8,0
@@ -300,6 +400,15 @@ DA:9,0
 FN:3,System.Void Scooter::.ctor()
 FNDA:0,System.Void Scooter::.ctor()
 DA:4,0
+=======
+FNDA:8,System.Double Scooter::getTarifaAgregada()
+DA:7,8
+DA:8,8
+DA:9,8
+FN:3,System.Void Scooter::.ctor()
+FNDA:6,System.Void Scooter::.ctor()
+DA:4,6
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LF:4
 LH:0
 BRF:0
@@ -359,7 +468,8 @@ BRH:2
 FNF:8
 FNH:8
 end_of_record
-SF:e:\AcademiaDigital\Project\TarifadorConTest\TarifadorCochala\Tarifador\Triciclo.cs
+<<<<<<< HEAD
+SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Triciclo.cs
 FN:5,System.Double Triciclo::getTarifaAgregada()
 FNDA:0,System.Double Triciclo::getTarifaAgregada()
 DA:6,0
@@ -368,6 +478,69 @@ DA:8,0
 FN:2,System.Void Triciclo::.ctor()
 FNDA:0,System.Void Triciclo::.ctor()
 DA:3,0
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Tarifador.cs
+FN:5,System.Collections.Generic.List`1<Usuario> Tarifador::getListaUsuario()
+FNDA:2,System.Collections.Generic.List`1<Usuario> Tarifador::getListaUsuario()
+DA:6,2
+DA:7,2
+DA:8,2
+FN:9,System.Void Tarifador::addUsuario(Usuario)
+FNDA:1,System.Void Tarifador::addUsuario(Usuario)
+DA:10,1
+DA:11,1
+DA:12,1
+FN:14,System.Collections.Generic.List`1<Usuario> Tarifador::getListaUsuarios()
+FNDA:7,System.Collections.Generic.List`1<Usuario> Tarifador::getListaUsuarios()
+DA:15,7
+DA:16,7
+DA:17,7
+FN:19,System.Void Tarifador::addListaUsuarios(System.Collections.Generic.List`1<Usuario>)
+FNDA:3,System.Void Tarifador::addListaUsuarios(System.Collections.Generic.List`1<Usuario>)
+DA:20,3
+DA:21,3
+DA:22,3
+FN:24,System.Void Tarifador::tarifar(System.Collections.Generic.List`1<IDescuento>)
+FNDA:2,System.Void Tarifador::tarifar(System.Collections.Generic.List`1<IDescuento>)
+DA:25,2
+DA:26,2
+DA:27,2
+FN:28,System.Void Tarifador::aniadirRegistroAUsuario(System.Int32,Registro)
+FNDA:3,System.Void Tarifador::aniadirRegistroAUsuario(System.Int32,Registro)
+DA:29,3
+DA:30,9
+DA:31,3
+DA:32,2
+DA:33,2
+DA:34,2
+DA:35,3
+BRDA:31,44,0,2
+BRDA:31,44,1,3
+FN:36,System.Void Tarifador::mostrarMontoPorUsuario()
+FNDA:0,System.Void Tarifador::mostrarMontoPorUsuario()
+DA:37,0
+DA:38,0
+DA:39,0
+FN:3,System.Void Tarifador::.ctor()
+FNDA:8,System.Void Tarifador::.ctor()
+DA:4,8
+LF:26
+LH:23
+BRF:2
+BRH:2
+FNF:8
+FNH:7
+end_of_record
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Triciclo.cs
+FN:5,System.Double Triciclo::getTarifaAgregada()
+FNDA:3,System.Double Triciclo::getTarifaAgregada()
+DA:6,3
+DA:7,3
+DA:8,3
+FN:2,System.Void Triciclo::.ctor()
+FNDA:3,System.Void Triciclo::.ctor()
+DA:3,3
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LF:4
 LH:0
 BRF:0
@@ -375,6 +548,7 @@ BRH:0
 FNF:2
 FNH:0
 end_of_record
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\Usuario.cs
@@ -395,16 +569,36 @@ FNDA:0,IPlanN.IPlan UsuarioN.Usuario::get_plan()
 DA:10,0
 FN:22,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
 FNDA:1,System.Void UsuarioN.Usuario::mostrarMontoPorPagar()
+=======
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\Usuario.cs
+FN:4,System.Int32 Usuario::get_ci()
+FNDA:30,System.Int32 Usuario::get_ci()
+DA:5,30
+FN:5,System.String Usuario::get_nombreCompleto()
+FNDA:25,System.String Usuario::get_nombreCompleto()
+DA:6,25
+FN:7,System.DateOnly Usuario::get_fechaNacimiento()
+FNDA:38,System.DateOnly Usuario::get_fechaNacimiento()
+DA:8,38
+FN:8,System.String Usuario::get_ocupacion()
+FNDA:35,System.String Usuario::get_ocupacion()
+DA:9,35
+FN:9,IPlan Usuario::get_plan()
+FNDA:28,IPlan Usuario::get_plan()
+DA:10,28
+FN:22,System.Void Usuario::mostrarMontoPorPagar()
+FNDA:1,System.Void Usuario::mostrarMontoPorPagar()
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 DA:23,1
 DA:24,1
 DA:25,1
-FN:26,System.Void UsuarioN.Usuario::agregarNuevoRegistro(RegistroN.Registro)
-FNDA:2,System.Void UsuarioN.Usuario::agregarNuevoRegistro(RegistroN.Registro)
-DA:27,2
-DA:28,2
-DA:29,2
-FN:30,System.Void UsuarioN.Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
-FNDA:1,System.Void UsuarioN.Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuentoN.IDescuento>)
+FN:26,System.Void Usuario::agregarNuevoRegistro(Registro)
+FNDA:4,System.Void Usuario::agregarNuevoRegistro(Registro)
+DA:27,4
+DA:28,4
+DA:29,4
+FN:30,System.Void Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuento>)
+FNDA:1,System.Void Usuario::calcularMontoTotalRegistros(System.Collections.Generic.List`1<IDescuento>)
 DA:31,1
 DA:32,1
 DA:33,1
@@ -412,6 +606,7 @@ DA:34,1
 DA:35,1
 DA:36,2
 DA:38,1
+<<<<<<< HEAD
 FN:10,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
 FNDA:2,System.Void UsuarioN.Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlanN.IPlan)
 DA:11,2
@@ -487,11 +682,25 @@ DA:19,2
 DA:20,2
 DA:21,2
 >>>>>>> dc7c7f50372923d1c4196f6de18f3251f6f99475
+=======
+FN:10,System.Void Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlan)
+FNDA:22,System.Void Usuario::.ctor(System.Int32,System.String,System.DateOnly,System.String,IPlan)
+DA:11,22
+DA:13,22
+DA:15,44
+DA:16,22
+DA:17,22
+DA:18,22
+DA:19,22
+DA:20,22
+DA:21,22
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 LF:27
-LH:0
+LH:27
 BRF:0
 BRH:0
 FNF:9
+<<<<<<< HEAD
 FNH:0
 end_of_record
 <<<<<<< HEAD
@@ -583,6 +792,11 @@ SF:c:\Users\AndrewTP\OneDrive\Documentos\Assuresoft\AcademiaDigital\Software Fun
 =======
 SF:c:\Users\LEGION 5\Documents\work\Assuresoft training\modulo 2 - software fundamentals\proyecto\TarifadorCochala\Tarifador\DateOnlyJsonConverter.cs
 >>>>>>> dc7c7f50372923d1c4196f6de18f3251f6f99475
+=======
+FNH:9
+end_of_record
+SF:c:\Users\Juan Jose\Desktop\Academia Digital\Software Development Fundamentals\Project\TarifadorCochala\Tarifador\DateOnlyJsonConverter.cs
+>>>>>>> 5761aec (refactored method and added new unit tests in to Registro)
 FN:9,System.DateOnly TarifadorJson.DateOnlyJsonConverter::Read(System.Text.Json.Utf8JsonReader&,System.Type,System.Text.Json.JsonSerializerOptions)
 FNDA:0,System.DateOnly TarifadorJson.DateOnlyJsonConverter::Read(System.Text.Json.Utf8JsonReader&,System.Type,System.Text.Json.JsonSerializerOptions)
 DA:10,0
