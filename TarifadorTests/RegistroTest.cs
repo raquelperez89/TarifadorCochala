@@ -17,6 +17,7 @@ namespace TarifadorTests
         [Test]
         public void calcularMontoRegistro()
         {
+            IImpuesto impuesto = new ImpuestoBoliviano();
             PlanRegular planRegular = new PlanRegular();
             Usuario usuario = new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 10), "plomero", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
@@ -24,7 +25,7 @@ namespace TarifadorTests
             new DescuentoEstudiante()};
             try
             {
-                registro.calcularMontoRegistro(usuario, descuentos);
+                registro.calcularMontoRegistro(usuario, descuentos, impuesto);
                 Assert.IsTrue(true);
             }
             catch

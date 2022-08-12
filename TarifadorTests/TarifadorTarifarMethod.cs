@@ -1,14 +1,14 @@
-using NUnit.Framework;
-
 namespace TarifadorTests
 {
     public class TarifadorTarifarMethod
     {
         private Tarifador tarifador;
+        private IImpuesto impuesto;
         [SetUp]
         public void Setup()
         {
             tarifador = new Tarifador();
+            impuesto = new ImpuestoBoliviano();
         }
 
         [Test]
@@ -20,7 +20,7 @@ namespace TarifadorTests
             };
             try
             {
-                tarifador.tarifar(descuentos);
+                tarifador.tarifar(descuentos, impuesto);
                 Assert.IsTrue(true);
             }
             catch
@@ -36,7 +36,7 @@ namespace TarifadorTests
             };
             try
             {
-                tarifador.tarifar(descuentos);
+                tarifador.tarifar(descuentos,impuesto);
                 Assert.IsTrue(true);
             }
             catch

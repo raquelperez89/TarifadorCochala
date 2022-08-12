@@ -1,4 +1,4 @@
-
+﻿
 using System.Text.Json;
 
 class Program
@@ -47,6 +47,7 @@ class Program
         Console.WriteLine($"ci: {weatherForecast[1].nombreCompleto}");
 
 */
+        IImpuesto impuesto = new ImpuestoBoliviano();
         Tarifador tarifador = new Tarifador();
         List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
@@ -60,7 +61,7 @@ class Program
         tarifador.aniadirRegistroAUsuario(2,listaRegistros[3]);
         tarifador.aniadirRegistroAUsuario(3,listaRegistros[2]);
         tarifador.aniadirRegistroAUsuario(4,listaRegistros[4]);
-        tarifador.tarifar(descuentos);
+        tarifador.tarifar(descuentos,impuesto);
         tarifador.mostrarMontoPorUsuario();
 
 

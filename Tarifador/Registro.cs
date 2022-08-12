@@ -12,10 +12,11 @@ public class Registro
         this.minutos = minutos;
     }
 
-    public void calcularMontoRegistro(Usuario usuario, List<IDescuento> descuentos)
+    public void calcularMontoRegistro(Usuario usuario, List<IDescuento> descuentos, IImpuesto impuesto)
     {
         double totalDescuentos = descuentos.Aggregate(0.0, (sumaDescuntos, descuento) => sumaDescuntos + descuento.getPorcentajeDescuento(usuario));
         montoRegistro = usuario.plan.cobroTotalPorMinuto(this.vehiculo) * minutos ;
-        montoRegistro = montoRegistro - montoRegistro*totalDescuentos;
+        montoRegistro = montoRegistro - montoRegistro * totalDescuentos;
+        montoRegistro = impuesto.applicarImpuesto(montoRegistro);
     }
 }
