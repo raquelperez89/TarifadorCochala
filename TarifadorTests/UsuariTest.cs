@@ -34,11 +34,11 @@ namespace TarifadorTests
             Assert.AreNotEqual(listaVacia, this.usuario.listaRegistros);
             Assert.AreEqual(this.usuario.listaRegistros[0],nuevoRegistro);
         }
-        [TestCase("Scooter", 40,28)]
+        [TestCase("Scooter", 40,32.2)]
         [TestCase("Hooverboard",0,0)]
-        [TestCase("Bicicleta",20,16)]
+        [TestCase("Bicicleta",20,18.4)]
         
-        public void calcularMontoTotalRegistrosTest(String tipoVehiculo, int minutosRegistro, int esperado)
+        public void calcularMontoTotalRegistrosTest(String tipoVehiculo, int minutosRegistro, double esperado)
         {
             double montoAntesDeCalculo = this.usuario.montoPorPagar; 
             IVehiculo vehiculo = null;
@@ -65,7 +65,7 @@ namespace TarifadorTests
                 new DescuentoEstudiante()
             };
             this.usuario.agregarNuevoRegistro(nuevoRegistro);
-            this.usuario.calcularMontoTotalRegistros(descuentos);
+            this.usuario.calcularMontoTotalRegistros(descuentos,impuesto);
             Assert.AreEqual(this.usuario.montoPorPagar, esperado);
         }
 
