@@ -25,8 +25,15 @@ namespace TarifadorTests
 
         [Test]
         public void addListaUsuariosTest(){
-            List<Usuario> usuarios = new List<Usuario>();        
-            tarifador.addListaUsuarios(usuarios);
+            List<Usuario> listaUsuariosSinAgregar = this.tarifador.getListaUsuario();
+            IPlan plan = new PlanMensual();
+            DateOnly fechaNacimiento = new DateOnly(2000,12,1);
+            List<Usuario> listaUsuarios = new List<Usuario>()
+            {
+                new Usuario(8988, "Test2", fechaNacimiento, "Estudiante", plan)
+            };
+            tarifador.addListaUsuarios(listaUsuarios);
+            Assert.AreNotEqual(listaUsuariosSinAgregar, this.tarifador.getListaUsuario());
         }
 
         [Test]
