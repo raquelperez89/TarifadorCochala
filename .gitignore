@@ -452,9 +452,4 @@ $RECYCLE.BIN/
 .vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-
-##Unit test
-TarifadorTests\lcov.info
-vscode/setting.json
-vscode/tasks.json
+lcov.info

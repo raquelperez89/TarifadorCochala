@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
-using IPlanN;
-namespace UsuarioN{
+
+
 public class Usuario{
     public int ci{get; set;}
     public string nombreCompleto{get; set;}
@@ -37,5 +37,4 @@ public class Usuario{
         
     }
 
-}
 }

@@ -1,4 +1,3 @@
-global using UsuarioN;
 
 namespace TarifadorTests
 {
@@ -13,17 +12,27 @@ namespace TarifadorTests
             descuentoCumple = new DescuentoCumple();
         }
 
-        [TestCase(08, 11, 0.3)]
-        [TestCase(01, 11, 0)]
-        [TestCase(08, 11, 0.3)]
-        [TestCase(08, 18, 0)]
-        public void getPorcentajeDescuentoTest(int mes, int dia, double expected)
+        [TestCase(04, 11)]
+        [TestCase(01, 11)]
+        [TestCase(09, 11)]
+        [TestCase(02, 18)]
+        public void getPorcentajeDescuentoTest(int mes, int dia)
         {
             IPlan plan = new PlanMensual();
             DateOnly fechaNacimiento = new DateOnly(2000,mes,dia);
             Usuario usuario = new Usuario(89898, "Test", fechaNacimiento, "Estudiante", plan);
             double result = descuentoCumple.getPorcentajeDescuento(usuario);
-            Assert.AreEqual(result, expected);
+            Assert.AreEqual(result, 0);
+        }
+        [Test]
+        public void getPorcentajeDescuentoHoyTest()
+        {
+            IPlan plan = new PlanMensual();
+            DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+            DateOnly fechaNacimiento = new DateOnly(2000,today.Month,today.Day);
+            Usuario usuario = new Usuario(89898, "Test", fechaNacimiento, "Estudiante", plan);
+            double result = descuentoCumple.getPorcentajeDescuento(usuario);
+            Assert.AreEqual(result, 0.30);
         }
     }
 }

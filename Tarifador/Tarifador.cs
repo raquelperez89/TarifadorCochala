@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 
-namespace TarifadorMain{
 public class Tarifador
 {
     private List<Usuario> usuarios = new List<Usuario>();
@@ -11,6 +9,11 @@ public class Tarifador
     public void addUsuario(Usuario usuario)
     {
         usuarios.Add(usuario);
+    }
+
+    public List<Usuario> getListaUsuarios()
+    {
+        return usuarios;
     }
 
     public void addListaUsuarios(List<Usuario> listaUsuarios)
@@ -34,5 +37,4 @@ public class Tarifador
     public void mostrarMontoPorUsuario(){
         this.usuarios.ForEach( usuario => usuario.mostrarMontoPorPagar());
     }
-}
 }

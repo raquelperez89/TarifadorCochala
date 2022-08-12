@@ -1,7 +1,4 @@
-global using IPlanN;
-using TarifadorMain;
-using UsuarioN;
-
+using Moq;
 namespace TarifadorTests
 {
     [TestFixture]
@@ -19,8 +16,21 @@ namespace TarifadorTests
         public void addUsuarioTest(){
             IPlan plan = new PlanMensual();
             DateOnly fechaNacimiento = new DateOnly(2000,12,1);
-            Usuario usuario = new Usuario(89898, "Test", fechaNacimiento, "Estudiante", plan);
+            Usuario usuario = new Usuario(89898, "Juan", fechaNacimiento, "Estudiante", plan);
             tarifador.addUsuario(usuario);
+            Assert.AreEqual(89898,tarifador.getListaUsuarios()[0].ci);
+            Assert.AreEqual("Juan", tarifador.getListaUsuarios()[0].nombreCompleto);
+            Assert.AreEqual(fechaNacimiento, tarifador.getListaUsuarios()[0].fechaNacimiento);
+            Assert.AreEqual("Estudiante",tarifador.getListaUsuarios()[0].ocupacion);
+            Assert.AreEqual(89898,tarifador.getListaUsuarios()[0].ci);
+            Assert.IsInstanceOf(typeof(IPlan),tarifador.getListaUsuarios()[0].plan);
+
+        }
+
+        [Test]
+        public void getListaUsuariosTest(){
+            Assert.IsInstanceOf(typeof(List<Usuario>),tarifador.getListaUsuarios());
+
         }
 
         [Test]
@@ -39,6 +49,40 @@ namespace TarifadorTests
         [Test]
         public void tarifarTest(){
             List<Usuario> usuarios = new List<Usuario>();
+        }
+
+        [Test]
+        public void aniadirRegistroAUsuarioTest(){
+            IVehiculo vehiculo = new Bicicleta();
+            Registro registro = new Registro(vehiculo, 30);
+            IPlan plan = new PlanMensual();
+            List<Usuario> listaUsuarios = new List<Usuario>()
+            {
+            new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
+            new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+            };
+            List<Registro> listaRegistros = new List<Registro>();
+            tarifador.addListaUsuarios(listaUsuarios);
+            tarifador.aniadirRegistroAUsuario(89898, registro);
+            tarifador.aniadirRegistroAUsuario(89898, registro);
+            
+            Assert.AreNotEqual(listaRegistros.Count,listaUsuarios[1].listaRegistros.Count);
+        }
+        [Test]
+        public void aniadirRegistroAUsuarioNullTest(){
+            IVehiculo vehiculo = new Bicicleta();
+            Registro registro = new Registro(vehiculo, 30);
+            IPlan plan = new PlanMensual();
+            DateOnly fechaNacimiento = new DateOnly(2000,12,1);
+            List<Usuario> listaUsuarios = new List<Usuario>()
+            {
+            new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
+            new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+            };
+            List<Registro> listaRegistros = new List<Registro>();
+            tarifador.addListaUsuarios(listaUsuarios);
+            tarifador.aniadirRegistroAUsuario(00, registro);
+            Assert.AreEqual(listaRegistros.Count,listaUsuarios[1].listaRegistros.Count);
         }
     }
 }
