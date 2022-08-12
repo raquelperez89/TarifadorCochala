@@ -57,8 +57,7 @@ namespace TarifadorTests
         }
 
         [Test]
-        public void aniadirRegistroAUsuarioTest()
-        {
+        public void aniadirRegistroAUsuarioTest(){
             IVehiculo vehiculo = new Bicicleta();
             Registro registro = new Registro(vehiculo, 30);
             IPlan plan = new PlanMensual();
@@ -75,8 +74,13 @@ namespace TarifadorTests
             tarifador.addListaUsuarios(listaUsuarios);
             tarifador.aniadirRegistroAUsuario(89898, registro);
             tarifador.aniadirRegistroAUsuario(89898, registro);
-            
-            Assert.AreNotEqual(listaRegistros.Count,listaUsuarios[1].listaRegistros.Count);
+            listaUsuarios[1].calcularMontoTotalRegistros(descuento, impuesto);
+
+            List<Registro> listaRegistros = new List<Registro>();
+            double result = listaUsuarios[1].montoPorPagar;
+
+            Assert.AreNotEqual(listaRegistros.Count, listaUsuarios[1].listaRegistros.Count);
+            Assert.AreEqual(35.19, result);
         }
 
         [Test]
@@ -121,12 +125,12 @@ namespace TarifadorTests
                 new DescuentoCumple(),
                 new DescuentoEstudiante()
             };
-            tarifador.tarifar(descuentos);
+            tarifador.tarifar(descuentos,impuesto);
             var output = new StringWriter();
             Console.SetOut(output);
             tarifador.mostrarMontoPorUsuario();
-            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "14,7" + "\r\n" +
-                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + "17,85" + "\r\n")));
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "16,904999999999998" + "\r\n" +
+                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + "20,527500000000003" + "\r\n")));
         }
 
         [Test]
@@ -150,12 +154,12 @@ namespace TarifadorTests
 
             List<IDescuento> descuentos = new List<IDescuento>(){
             };
-            tarifador.tarifar(descuentos);
+            tarifador.tarifar(descuentos, impuesto);
             var output = new StringWriter();
             Console.SetOut(output);
             tarifador.mostrarMontoPorUsuario();
-            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "21" + "\r\n" +
-                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + "21" + "\r\n")));
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "24,15" + "\r\n" +
+                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + "24,15" + "\r\n")));
         }
         [Test]
         public void mostrarMontoPorUsuarioTest(){
