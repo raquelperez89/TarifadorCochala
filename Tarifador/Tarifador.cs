@@ -21,9 +21,9 @@ public class Tarifador
         this.usuarios = listaUsuarios;
     }
 
-    public void tarifar(List<IDescuento> descuentos)
+    public void tarifar(List<IDescuento> descuentos,IImpuesto impuesto)
     {        
-        this.usuarios.ForEach( usuario =>  usuario.calcularMontoTotalRegistros(descuentos));
+        this.usuarios.ForEach( usuario =>  usuario.calcularMontoTotalRegistros(descuentos,impuesto));
     }
 
     public void aniadirRegistroAUsuario(int ciUsuario, Registro registro){

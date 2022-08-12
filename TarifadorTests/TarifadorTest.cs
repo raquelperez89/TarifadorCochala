@@ -4,11 +4,13 @@ namespace TarifadorTests
     public class TarifadorTest
     {
         private Tarifador tarifador;
+        private IImpuesto impuesto;
 
         [SetUp]
         public void SetUp()
         {
             tarifador = new Tarifador();
+            impuesto = new ImpuestoBoliviano();
         }
 
         [Test]
@@ -102,11 +104,11 @@ namespace TarifadorTests
                 new DescuentoCumple(),
                 new DescuentoEstudiante()
             };
-            tarifadortest.tarifar(descuentos);
+            tarifadortest.tarifar(descuentos,impuesto);
             var output = new StringWriter();
             Console.SetOut(output);
             tarifadortest.mostrarMontoPorUsuario();
-            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "12" + "\r\n" +
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "13,8" + "\r\n" +
                                                                     listaUsuarios[1].nombreCompleto + ", deuda: " + "0" + "\r\n")));
         }
     }
