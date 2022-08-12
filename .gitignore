@@ -448,8 +448,17 @@ $RECYCLE.BIN/
 ## Visual Studio Code
 ##
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
+.vscode/settings.json
+.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+<<<<<<< HEAD
 lcov.info
+=======
+
+
+##Unit test
+TarifadorTests\lcov.info
+vscode/setting.json
+vscode/tasks.json
+>>>>>>> 50c4199565c2950f6248f4a2f056237a518fe483

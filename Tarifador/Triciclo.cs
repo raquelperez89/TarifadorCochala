@@ -1,4 +1,4 @@
-class Triciclo : IVehiculo
+public class Triciclo : IVehiculo
 {
     private double tarifaAgregadaMinuto = 0.20;
 
