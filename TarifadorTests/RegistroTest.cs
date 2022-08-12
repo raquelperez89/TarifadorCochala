@@ -49,7 +49,8 @@ namespace TarifadorTests
         public void calcularMontoRegistroEstudianteConDescuentoCumpleaño()
         {
             PlanRegular planRegular = new PlanRegular();
-            Usuario usuario = new Usuario(1, "Pedro", new DateOnly(2000, 08, 12), "Estudiante", planRegular);
+            DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+            Usuario usuario = new Usuario(1, "Pedro", today, "Estudiante", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
             new DescuentoEstudiante()};
