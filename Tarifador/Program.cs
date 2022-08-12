@@ -15,7 +15,7 @@ class Program
 
         List<Registro> listaRegistros = new List<Registro>()
         {
-            new Registro(scooter, 40),
+            new Registro(bicicleta, 20),
             new Registro(bicicleta, 40),
             new Registro(triciclo, 40),
             new Registro(hoverboard, 40),

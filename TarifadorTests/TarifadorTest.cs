@@ -1,4 +1,3 @@
-using Moq;
 namespace TarifadorTests
 {
     [TestFixture]
@@ -83,6 +82,32 @@ namespace TarifadorTests
             tarifador.addListaUsuarios(listaUsuarios);
             tarifador.aniadirRegistroAUsuario(00, registro);
             Assert.AreEqual(listaRegistros.Count,listaUsuarios[1].listaRegistros.Count);
+        }
+        [Test]
+        public void mostrarMontoPorUsuarioTest(){
+            IVehiculo vehiculo = new Bicicleta();
+            Registro registro = new Registro(vehiculo, 20);
+            IPlan plan = new PlanMensual();
+            DateOnly fechaNacimiento = new DateOnly(2000,12,1);
+            List<Usuario> listaUsuarios = new List<Usuario>()
+            {
+                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
+                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "plomero", plan)
+            };
+            List<Registro> listaRegistros = new List<Registro>();
+            Tarifador tarifadortest = new Tarifador();
+            tarifadortest.addListaUsuarios(listaUsuarios);
+            tarifadortest.aniadirRegistroAUsuario(1, registro);
+            List<IDescuento> descuentos = new List<IDescuento>(){
+                new DescuentoCumple(),
+                new DescuentoEstudiante()
+            };
+            tarifadortest.tarifar(descuentos);
+            var output = new StringWriter();
+            Console.SetOut(output);
+            tarifadortest.mostrarMontoPorUsuario();
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "12" + "\r\n" +
+                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + "0" + "\r\n")));
         }
     }
 }

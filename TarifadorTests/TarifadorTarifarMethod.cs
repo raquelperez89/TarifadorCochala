@@ -1,6 +1,4 @@
 using NUnit.Framework;
-using TarifadorMain;
-using IDescuentoN;
 
 namespace TarifadorTests
 {
