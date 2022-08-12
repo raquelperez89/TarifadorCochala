@@ -10,7 +10,7 @@ public class Usuario{
     public IPlan plan {get; set;}
     public double montoPorPagar = 0;
 
-    private List<Registro> listaRegistros = new List<Registro>();
+    public readonly List<Registro> listaRegistros = new List<Registro>();
 
     public Usuario(int ci, string nombreCompleto, DateOnly fechaNacimiento, string ocupacion, IPlan plan){
         this.ci = ci;
@@ -21,7 +21,7 @@ public class Usuario{
     }
 
     public void mostrarMontoPorPagar(){
-        Console.WriteLine(this.nombreCompleto + ", deuda: " + this.montoPorPagar);
+        Console.WriteLine(string.Format(this.nombreCompleto + ", deuda: " + this.montoPorPagar));
     }
 
     public void agregarNuevoRegistro(Registro registro){
