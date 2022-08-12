@@ -70,13 +70,13 @@ namespace TarifadorTests
             tarifador.addListaUsuarios(listaUsuarios);
             tarifador.aniadirRegistroAUsuario(89898, registro);
             tarifador.aniadirRegistroAUsuario(89898, registro);
-            listaUsuarios[1].calcularMontoTotalRegistros(descuento);
+            listaUsuarios[1].calcularMontoTotalRegistros(descuento, impuesto);
 
             List<Registro> listaRegistros = new List<Registro>();
             double result = listaUsuarios[1].montoPorPagar;
 
             Assert.AreNotEqual(listaRegistros.Count, listaUsuarios[1].listaRegistros.Count);
-            Assert.AreEqual(30.6, result);
+            Assert.AreEqual(35.19, result);
         }
 
         [Test]
@@ -97,6 +97,8 @@ namespace TarifadorTests
         }
         [Test]
         public void mostrarMontoPorUsuarioTest(){
+            double valor = 13.8;
+            String str = valor.ToString();
             IVehiculo vehiculo = new Bicicleta();
             Registro registro = new Registro(vehiculo, 20);
             IPlan plan = new PlanMensual();
@@ -118,7 +120,7 @@ namespace TarifadorTests
             var output = new StringWriter();
             Console.SetOut(output);
             tarifadortest.mostrarMontoPorUsuario();
-            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "13,8" + "\r\n" +
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + str + "\r\n" +
                                                                     listaUsuarios[1].nombreCompleto + ", deuda: " + "0" + "\r\n")));
         }
     }
