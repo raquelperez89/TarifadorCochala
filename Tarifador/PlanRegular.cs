@@ -1,4 +1,4 @@
-class PlanRegular : IPlan
+public class PlanRegular : IPlan
 {
     private readonly double costoMinutoInicial = 0.5;
 
