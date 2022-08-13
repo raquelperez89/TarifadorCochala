@@ -109,6 +109,7 @@ namespace TarifadorTests
             Registro registro = new Registro(vehiculo, 30);
             IPlan plan = new PlanRegular();
             DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+            
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
             new Usuario(1, "Pedro", today, "plomero", plan),
@@ -125,12 +126,18 @@ namespace TarifadorTests
                 new DescuentoCumple(),
                 new DescuentoEstudiante()
             };
+
+            double valorUsuario0 = 16.904999999999998;
+            String deudaUsuario0 = valorUsuario0.ToString();
+            double valorUsuario1 = 20.527500000000003;
+            String deudaUsuario1 = valorUsuario1.ToString();
+
             tarifador.tarifar(descuentos,impuesto);
             var output = new StringWriter();
             Console.SetOut(output);
             tarifador.mostrarMontoPorUsuario();
-            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "16,904999999999998" + "\r\n" +
-                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + "20,527500000000003" + "\r\n")));
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + deudaUsuario0 + "\r\n" +
+                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + deudaUsuario1 + "\r\n")));
         }
 
         [Test]
@@ -154,17 +161,21 @@ namespace TarifadorTests
 
             List<IDescuento> descuentos = new List<IDescuento>(){
             };
+
+            double valor = 24.15;
+            String deuda = valor.ToString();
+
             tarifador.tarifar(descuentos, impuesto);
             var output = new StringWriter();
             Console.SetOut(output);
             tarifador.mostrarMontoPorUsuario();
-            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + "24,15" + "\r\n" +
-                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + "24,15" + "\r\n")));
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + deuda + "\r\n" +
+                                                                    listaUsuarios[1].nombreCompleto + ", deuda: " + deuda + "\r\n")));
         }
         [Test]
         public void mostrarMontoPorUsuarioTest(){
             double valor = 13.8;
-            String str = valor.ToString();
+            String deuda = valor.ToString();
             IVehiculo vehiculo = new Bicicleta();
             Registro registro = new Registro(vehiculo, 20);
             IPlan plan = new PlanMensual();
@@ -186,7 +197,7 @@ namespace TarifadorTests
             var output = new StringWriter();
             Console.SetOut(output);
             tarifadortest.mostrarMontoPorUsuario();
-            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + str + "\r\n" +
+            Assert.That(output.ToString(), Is.EqualTo(string.Format(listaUsuarios[0].nombreCompleto + ", deuda: " + deuda + "\r\n" +
                                                                     listaUsuarios[1].nombreCompleto + ", deuda: " + "0" + "\r\n")));
         }
     }
