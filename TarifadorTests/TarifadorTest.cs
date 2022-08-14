@@ -5,20 +5,31 @@ namespace TarifadorTests
     {
         private Tarifador tarifador;
         private IImpuesto impuesto;
+        private IPlan planMensual, planRegular;
+        private DateOnly fechaNacimiento;
+        private DateOnly today;
+        private IVehiculo bicicleta, scooter;
+        private IDescuento descuentoCumple, descuentoEstudiante;
 
         [SetUp]
         public void SetUp()
         {
             tarifador = new Tarifador();
             impuesto = new ImpuestoBoliviano();
+            planMensual = new PlanMensual();
+            planRegular = new PlanRegular();
+            fechaNacimiento = new DateOnly(2000, 12, 1);
+            bicicleta = new Bicicleta();
+            scooter = new Scooter();
+            descuentoCumple = new DescuentoCumple();
+            descuentoEstudiante = new DescuentoEstudiante();
+            today = DateOnly.FromDateTime(DateTime.Now);
         }
 
         [Test]
         public void addUsuarioTest()
         {
-            IPlan plan = new PlanMensual();
-            DateOnly fechaNacimiento = new DateOnly(2000, 12, 1);
-            Usuario usuario = new Usuario(89898, "Juan", fechaNacimiento, "Estudiante", plan);
+            Usuario usuario = new Usuario(89898, "Juan", fechaNacimiento, "Estudiante", planMensual);
             tarifador.addUsuario(usuario);
             Assert.AreEqual(89898, tarifador.getListaUsuarios()[0].ci);
             Assert.AreEqual("Juan", tarifador.getListaUsuarios()[0].nombreCompleto);
@@ -33,42 +44,31 @@ namespace TarifadorTests
         public void getListaUsuariosTest()
         {
             Assert.IsInstanceOf(typeof(List<Usuario>), tarifador.getListaUsuarios());
-
         }
 
         [Test]
         public void addListaUsuariosTest()
         {
             List<Usuario> listaUsuariosSinAgregar = this.tarifador.getListaUsuarios();
-            IPlan plan = new PlanMensual();
-            DateOnly fechaNacimiento = new DateOnly(2000, 12, 1);
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-                new Usuario(8988, "Test2", fechaNacimiento, "Estudiante", plan)
+                new Usuario(89898, "Juan", fechaNacimiento, "Estudiante", planMensual)
             };
             tarifador.addListaUsuarios(listaUsuarios);
             Assert.AreNotEqual(listaUsuariosSinAgregar, this.tarifador.getListaUsuarios());
         }
 
         [Test]
-        public void tarifarTest()
-        {
-            List<Usuario> usuarios = new List<Usuario>();
-        }
-
-        [Test]
         public void aniadirRegistroAUsuarioTest(){
-            IVehiculo vehiculo = new Bicicleta();
-            Registro registro = new Registro(vehiculo, 30);
-            IPlan plan = new PlanMensual();
+            Registro registro = new Registro(bicicleta, 30);
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
-                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", planMensual),
+                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", planMensual)
             };
             List<IDescuento>  descuento = new List<IDescuento>()
             {
-                new DescuentoEstudiante()
+                descuentoEstudiante
             };
                        
             tarifador.addListaUsuarios(listaUsuarios);
@@ -86,14 +86,11 @@ namespace TarifadorTests
         [Test]
         public void aniadirRegistroAUsuarioNullTest()
         {
-            IVehiculo vehiculo = new Bicicleta();
-            Registro registro = new Registro(vehiculo, 30);
-            IPlan plan = new PlanMensual();
-            DateOnly fechaNacimiento = new DateOnly(2000, 12, 1);
+            Registro registro = new Registro(bicicleta, 30);
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
-                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", planMensual),
+                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", planMensual)
             };
             List<Registro> listaRegistros = new List<Registro>();
             tarifador.addListaUsuarios(listaUsuarios);
@@ -105,15 +102,12 @@ namespace TarifadorTests
         [Test]
         public void tarifarConListaDeDescuentos()
         {
-            IVehiculo vehiculo = new Scooter();
-            Registro registro = new Registro(vehiculo, 30);
-            IPlan plan = new PlanRegular();
-            DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+            Registro registro = new Registro(scooter, 30);
             
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-            new Usuario(1, "Pedro", today, "plomero", plan),
-            new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+            new Usuario(1, "Pedro", today, "plomero", planRegular),
+            new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", planRegular)
             };
             List<Registro> listaRegistros = new List<Registro>();
             listaRegistros.Add(registro);
@@ -123,8 +117,8 @@ namespace TarifadorTests
             tarifador.aniadirRegistroAUsuario(listaUsuarios[1].ci, listaRegistros[1]);
 
             List<IDescuento> descuentos = new List<IDescuento>(){
-                new DescuentoCumple(),
-                new DescuentoEstudiante()
+                descuentoCumple,
+                descuentoEstudiante
             };
 
             double valorUsuario0 = 16.904999999999998;
@@ -143,14 +137,11 @@ namespace TarifadorTests
         [Test]
         public void tarifarConListaDeDescuentosVacia()
         {
-            IVehiculo vehiculo = new Scooter();
-            Registro registro = new Registro(vehiculo, 30);
-            IPlan plan = new PlanRegular();
-            DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+            Registro registro = new Registro(scooter, 30);
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-            new Usuario(1, "Pedro", today, "plomero", plan),
-            new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", plan)
+                new Usuario(1, "Pedro", today, "plomero", planRegular),
+                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "Estudiante", planRegular)
             };
             List<Registro> listaRegistros = new List<Registro>();
             listaRegistros.Add(registro);
@@ -176,22 +167,19 @@ namespace TarifadorTests
         public void mostrarMontoPorUsuarioTest(){
             double valor = 13.8;
             String deuda = valor.ToString();
-            IVehiculo vehiculo = new Bicicleta();
-            Registro registro = new Registro(vehiculo, 20);
-            IPlan plan = new PlanMensual();
-            DateOnly fechaNacimiento = new DateOnly(2000,12,1);
+            Registro registro = new Registro(bicicleta, 20);
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", plan),
-                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "plomero", plan)
+                new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 11), "plomero", planMensual),
+                new Usuario(89898, "goku", new DateOnly(2000, 04, 20), "plomero", planMensual)
             };
             List<Registro> listaRegistros = new List<Registro>();
             Tarifador tarifadortest = new Tarifador();
             tarifadortest.addListaUsuarios(listaUsuarios);
             tarifadortest.aniadirRegistroAUsuario(1, registro);
             List<IDescuento> descuentos = new List<IDescuento>(){
-                new DescuentoCumple(),
-                new DescuentoEstudiante()
+                descuentoCumple,
+                descuentoEstudiante
             };
             tarifadortest.tarifar(descuentos,impuesto);
             var output = new StringWriter();
