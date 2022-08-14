@@ -6,5 +6,10 @@ public class PlanRegular : IPlan
     {
         return costoMinutoInicial + tipoVehiculo.getTarifaAgregada();
     }
+
+    public string getNombrePlan(){
+        return "REGULAR";
+    }
+
 }
 
