@@ -3,7 +3,7 @@ using NUnit.Framework;
 namespace TarifadorTests
 {
     [TestFixture]
-    class UsuariTest
+    class UsuarioTest
     {
         private Usuario usuario;
         private IImpuesto impuesto;
@@ -37,7 +37,6 @@ namespace TarifadorTests
         [TestCase("Scooter", 40,32.2)]
         [TestCase("Hooverboard",0,0)]
         [TestCase("Bicicleta",20,18.4)]
-        
         public void calcularMontoTotalRegistrosTest(String tipoVehiculo, int minutosRegistro, double esperado)
         {
             double montoAntesDeCalculo = this.usuario.montoPorPagar; 
@@ -67,6 +66,21 @@ namespace TarifadorTests
             this.usuario.agregarNuevoRegistro(nuevoRegistro);
             this.usuario.calcularMontoTotalRegistros(descuentos,impuesto);
             Assert.AreEqual(this.usuario.montoPorPagar, esperado);
+        }
+
+        [Test]
+        public void mostrarInfoTest()
+        {
+            var output = new StringWriter();
+            Console.SetOut(output);
+            usuario.mostrarInformacion();
+            Assert.That(output.ToString(), Is.EqualTo(string.Format("---------Información del Usuario---------"+"\r\n" +
+                                                                    "Ci:" + usuario.ci +  "\r\n" +
+                                                                    "Nombre completo:" + usuario.nombreCompleto + "\r\n" +
+                                                                    "Fecha de nacimiento:" + usuario.fechaNacimiento + "\r\n" +
+                                                                    "Ocupacion: " + usuario.ocupacion + "\r\n" +
+                                                                    "Plan: " + usuario.plan.getNombrePlan() + "\r\n" +
+                                                                    "Monto por pagar: " + usuario.montoPorPagar + "\r\n")));
         }
 
     }

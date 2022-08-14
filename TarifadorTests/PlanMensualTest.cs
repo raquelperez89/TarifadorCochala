@@ -40,5 +40,11 @@ namespace PlanTests
             double result = plan.cobroTotalPorMinuto(vehiculo);
             Assert.AreEqual(result, expected);
         }
+
+        [Test]
+        public void getNombrePlanTest()
+        {
+            Assert.AreEqual(plan.getNombrePlan(),"MENSUAL");
+        }
     }
 }

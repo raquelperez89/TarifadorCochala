@@ -41,5 +41,12 @@ namespace PlanTests
 
             Assert.AreEqual(result, expected);
         }
+
+        [Test]
+        public void getNombrePlan()
+        {
+            string nombrePlan = plan.getNombrePlan();
+            Assert.AreEqual("REGULAR", nombrePlan);
+        }
     }
 }
