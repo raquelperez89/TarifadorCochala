@@ -39,7 +39,7 @@ namespace TarifadorTests
         [Test]
         public void addListaUsuariosTest()
         {
-            List<Usuario> listaUsuariosSinAgregar = this.tarifador.getListaUsuario();
+            List<Usuario> listaUsuariosSinAgregar = this.tarifador.getListaUsuarios();
             IPlan plan = new PlanMensual();
             DateOnly fechaNacimiento = new DateOnly(2000, 12, 1);
             List<Usuario> listaUsuarios = new List<Usuario>()
@@ -47,7 +47,7 @@ namespace TarifadorTests
                 new Usuario(8988, "Test2", fechaNacimiento, "Estudiante", plan)
             };
             tarifador.addListaUsuarios(listaUsuarios);
-            Assert.AreNotEqual(listaUsuariosSinAgregar, this.tarifador.getListaUsuario());
+            Assert.AreNotEqual(listaUsuariosSinAgregar, this.tarifador.getListaUsuarios());
         }
 
         [Test]
