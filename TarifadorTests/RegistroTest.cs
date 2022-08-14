@@ -1,23 +1,25 @@
-namespace TarifadorTests
+namespace RegistroTests
 {
     public class RegistroTest
     {
         private Registro registro;
         private IVehiculo vehiculo = new Scooter();
         private int minutosDeUso = 10;
+        private IImpuesto impuesto;
+        private IPlan planRegular;
 
         [SetUp]
         public void Setup()
         {
 
             registro = new Registro(vehiculo, minutosDeUso);
+            impuesto = new ImpuestoBoliviano();
+            planRegular = new PlanRegular();
         }
 
         [Test]
         public void calcularMontoRegistro()
         {
-            IImpuesto impuesto = new ImpuestoBoliviano();
-            PlanRegular planRegular = new PlanRegular();
             Usuario usuario = new Usuario(1, "Pedro picapiedra", new DateOnly(2000, 08, 10), "plomero", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
@@ -32,8 +34,6 @@ namespace TarifadorTests
         [Test]
         public void calcularMontoRegistroEstudiante()
         {
-            PlanRegular planRegular = new PlanRegular();
-            IImpuesto impuesto = new ImpuestoBoliviano();
             Usuario usuario = new Usuario(1, "Pedro", new DateOnly(2000, 08, 10), "Estudiante", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),
@@ -48,8 +48,6 @@ namespace TarifadorTests
         [Test]
         public void calcularMontoRegistroEstudianteConDescuentoCumpleaño()
         {
-            PlanRegular planRegular = new PlanRegular();
-            IImpuesto impuesto = new ImpuestoBoliviano();
             DateOnly today = DateOnly.FromDateTime(DateTime.Now);
             Usuario usuario = new Usuario(1, "Pedro", today, "Estudiante", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
@@ -65,8 +63,6 @@ namespace TarifadorTests
         [Test]
         public void calcularMontoRegistroConDescuentoDel90PorCiento()
         {
-            PlanRegular planRegular = new PlanRegular();
-            IImpuesto impuesto = new ImpuestoBoliviano();
             Usuario usuario = new Usuario(1, "Pedro", new DateOnly(2000, 08, 12), "Estudiante", planRegular);
             List<IDescuento> descuentos = new List<IDescuento>(){
             new DescuentoCumple(),

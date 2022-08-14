@@ -1,6 +1,4 @@
-using NUnit.Framework;
-
-namespace TarifadorTests
+namespace UsuarioTests
 {
     [TestFixture]
     class UsuarioTest

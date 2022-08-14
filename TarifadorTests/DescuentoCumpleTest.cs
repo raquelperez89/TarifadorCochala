@@ -1,15 +1,18 @@
 
-namespace TarifadorTests
+namespace DescuentosTests
 {
     [TestFixture]
     public class DescuentoCumpleTest
     {
         private DescuentoCumple descuentoCumple;
-        private DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+        private DateOnly today;
+        private IPlan plan;
         [SetUp]
         public void Setup()
         {
             descuentoCumple = new DescuentoCumple();
+            plan = new PlanMensual();
+            today = DateOnly.FromDateTime(DateTime.Now);
         }
 
         [TestCase(04, 11)]
@@ -18,7 +21,6 @@ namespace TarifadorTests
         [TestCase(02, 18)]
         public void getPorcentajeDescuentoTest(int mes, int dia)
         {
-            IPlan plan = new PlanMensual();
             DateOnly fechaNacimiento = new DateOnly(2000,mes,dia);
             Usuario usuario = new Usuario(89898, "Test", fechaNacimiento, "Estudiante", plan);
             double result = descuentoCumple.getPorcentajeDescuento(usuario);
@@ -27,8 +29,6 @@ namespace TarifadorTests
         [Test]
         public void getPorcentajeDescuentoHoyTest()
         {
-            IPlan plan = new PlanMensual();
-            DateOnly today = DateOnly.FromDateTime(DateTime.Now);
             DateOnly fechaNacimiento = new DateOnly(2000,today.Month,today.Day);
             Usuario usuario = new Usuario(89898, "Test", fechaNacimiento, "Estudiante", plan);
             double result = descuentoCumple.getPorcentajeDescuento(usuario);

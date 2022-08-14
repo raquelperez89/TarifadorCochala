@@ -8,7 +8,6 @@ namespace TarifadorTests
         private IPlan planMensual, planRegular;
         private DateOnly fechaNacimiento;
         private DateOnly today;
-        private Usuario usuario;
         private IVehiculo bicicleta, scooter;
         private IDescuento descuentoCumple, descuentoEstudiante;
 
@@ -20,7 +19,6 @@ namespace TarifadorTests
             planMensual = new PlanMensual();
             planRegular = new PlanRegular();
             fechaNacimiento = new DateOnly(2000, 12, 1);
-            usuario = new Usuario(89898, "Juan", fechaNacimiento, "Estudiante", planMensual);
             bicicleta = new Bicicleta();
             scooter = new Scooter();
             descuentoCumple = new DescuentoCumple();
@@ -31,6 +29,7 @@ namespace TarifadorTests
         [Test]
         public void addUsuarioTest()
         {
+            Usuario usuario = new Usuario(89898, "Juan", fechaNacimiento, "Estudiante", planMensual);
             tarifador.addUsuario(usuario);
             Assert.AreEqual(89898, tarifador.getListaUsuarios()[0].ci);
             Assert.AreEqual("Juan", tarifador.getListaUsuarios()[0].nombreCompleto);
@@ -53,7 +52,7 @@ namespace TarifadorTests
             List<Usuario> listaUsuariosSinAgregar = this.tarifador.getListaUsuarios();
             List<Usuario> listaUsuarios = new List<Usuario>()
             {
-                usuario
+                new Usuario(89898, "Juan", fechaNacimiento, "Estudiante", planMensual)
             };
             tarifador.addListaUsuarios(listaUsuarios);
             Assert.AreNotEqual(listaUsuariosSinAgregar, this.tarifador.getListaUsuarios());
